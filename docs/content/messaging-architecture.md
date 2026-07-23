@@ -1,121 +1,153 @@
 ---
-id: messaging-architecture
 title: Messaging Architecture
-status: working
-owner: Rodney O'Byrne
-last_reviewed: 2026-07-22
-source_of_truth: true
-dependencies:
-  - core-audience-strategy
-  - emotional-marketing-system
-  - service-and-product-architecture
-  - persona-to-offer-matrix
+document_type: content-strategy
+status: approved-for-build
+last_reviewed: 2026-07-23
 ---
 
 # Messaging Architecture
 
-## Working positioning
+## Core promise
 
-oobCREATIVE helps capable leaders turn complex ideas, scattered communication, and underused technology into practical systems people can understand, trust, and act on.
+> Make complex work easier to understand, manage, and move forward.
 
-## Core transformation
+## Primary positioning statement
 
-Turn valuable thinking into clear, usable communication and practical systems that reduce pressure and make progress easier without sacrificing quality, trust, depth, or humanity.
+> oobCREATIVE helps mission-driven and expert-led organizations turn complex work into clear messaging, useful websites, sustainable communication systems, and practical human-reviewed AI workflows.
 
-## Audience condition
+## Supporting explanation
 
-The audience is not incapable or behind. Their personal effort is compensating for missing structure.
+> Strategy and implementation stay connected. The work may involve positioning, content, websites, campaigns, organizational knowledge, or AI-supported workflows—but each engagement begins with the real audience, pressure, and decision the organization needs to address.
 
-Strong commercial fit includes developed judgment, meaningful responsibility, and a communication or execution gap with a visible cost.
+## Three customer outcomes
 
-## Public audience groups
+### Make the work understandable
 
-Working groups:
+Clarify the audience, message, service, program, mission, or expertise so the right people can recognize its value and know what to do next.
 
-- Founder-led organizations
-- Nonprofits and mission-driven teams
-- Communications and operational leaders
-- Experts and independent professionals
+### Make communication manageable
 
-These groups do not replace archetype reasoning. They provide public context.
+Create reusable language, content resources, priorities, approvals, and workflows so communication no longer depends on repeated reconstruction or one overloaded person.
 
-## Emotional sequence
+### Make technology useful
 
-1. Recognition — I see my situation here.
-2. Validation — This is not happening because I am incapable.
-3. Agency — There is a path I can choose.
-4. Safety — I understand what this involves.
-5. Momentum — I can experience progress before everything is solved.
-6. Capability — I am stronger after the work is complete.
+Apply websites, automation, and AI to real responsibilities while preserving human judgment, review, privacy, and accountability.
 
-## Public pathways
+## Homepage hero
 
-Working recognition statements:
+### Heading
 
-1. Everything still depends on me.
-2. Our work is difficult to explain.
-3. Communication feels chaotic.
-4. People do not understand the value of what I do.
-5. We need a practical, responsible way to use AI.
-6. A project has stalled or gone wrong.
-7. I am ready to turn an idea into something real.
+> Complex work deserves communication people can understand, trust, and use.
 
-These statements are entry pathways. They are not automatically navigation labels, page titles, products, or seven equal cards.
+### Supporting copy
 
-## Service families
+> oobCREATIVE helps behavioral-health, mission-driven, and expert-led organizations clarify their message, build useful websites and communication systems, and apply AI responsibly.
 
-Working public service families:
+### Actions
 
-1. Message, Positioning and Identity
-2. Website Strategy and Visual Refresh
-3. Communication Systems and Practical AI
-4. Campaigns, Launches and Storytelling
-5. Ongoing Communications Support
+- See How We Help
+- View the Work
 
-The service family defines scope, deliverables, delivery method, pricing, and operational capacity.
+## Recognition language
 
-## Participation modes
+### Clarify the work
 
-- Guided
-- Co-Created
-- Full Implementation
+> The value is real, but people do not quickly understand what you offer, why it matters, or what they should do next.
 
-Participation modes define how responsibility is shared. They are not top-level services.
+### Build a system around it
 
-## Relationship model
+> Too much communication still depends on memory, repeated explanation, scattered files, or one overloaded person.
 
-```text
-Recognizable situation
-        ↓
-Protected value and desired movement
-        ↓
-Relevant service family
-        ↓
-Participation mode
-        ↓
-Concrete outputs and completion evidence
-        ↓
-Next step that confirms fit
-```
+### Move an important initiative forward
 
-## Choice architecture
+> A campaign, launch, fundraising effort, website, or internal project needs direction and practical implementation.
 
-Do not present more than three primary choices at one decision point unless the interface is intentionally functioning as a screening tool.
+## Service message
 
-Seven pathways may be grouped, sequenced, progressively disclosed, or placed on a dedicated experience. The final structure remains open.
+### Heading
 
-## Public language rule
+> Clarify the message. Build the system. Move the work forward.
 
-Use descriptive service language for titles, headings, URLs, navigation, internal links, and SEO.
+### Positioning, Messaging and Websites
 
-Use emotional or branded language as recognition statements, secondary headings, modules, or pathways.
+> Make valuable work easier to understand and choose without flattening what makes it distinctive.
 
-## Guardrails
+### Communication Systems and Practical AI
 
-- Do not diagnose the visitor.
-- Do not create fear-based urgency.
-- Do not imply the visitor is behind.
-- Do not ask the visitor to name a service before recognizing the problem.
-- Do not hide all clarity behind a call.
-- Do not create dependency.
-- Do not invent products merely to mirror the seven personas.
+> Replace scattered information and repeated effort with reusable knowledge, clear decisions, and human-reviewed workflows.
+
+### Campaigns, Fundraising and Organizational Growth
+
+> Connect story, audience, action, assets, and rollout so an important initiative can gain real momentum.
+
+## Who-we-help message
+
+### Heading
+
+> Built for organizations carrying work that matters.
+
+### Behavioral health and human services
+
+> Communicate high-stakes services, expertise, and pathways with the clarity, dignity, and practical detail people need to make decisions.
+
+### Nonprofits and community organizations
+
+> Turn mission, impact, programs, fundraising, events, and organizational knowledge into a communication system the whole organization can use.
+
+### Expert-led firms and consultants
+
+> Make specialized knowledge understandable, differentiated, and commercially actionable without turning it into generic marketing.
+
+## How-we-work message
+
+### Understand
+
+> Identify the audience, pressure, decision, and structural problem behind the immediate request.
+
+### Build
+
+> Connect messaging, design, content, workflow, and technology into one usable solution.
+
+### Equip
+
+> Leave the organization with reusable resources, clearer decisions, and greater internal capability.
+
+## About preview
+
+> Rodney O'Byrne brings more than 30 years of experience across brand strategy, healthcare communication, digital media, websites, creative production, organizational workflow, and emerging technology. oobCREATIVE connects those disciplines so strategy does not become separated from implementation.
+
+## Final call to action
+
+### Heading
+
+> What needs to become clearer, more usable, or easier to carry?
+
+### Supporting copy
+
+> Share the situation that feels closest to where you are. The first conversation is used to confirm the problem, appropriate scope, and next step—not to keep the solution hidden.
+
+### Action
+
+> Start a Conversation
+
+## Tone rules
+
+Use:
+
+- Recognition before diagnosis
+- Respect for the buyer's judgment
+- Direct language
+- Concrete outputs
+- Honest limits
+- Calm confidence
+- Human responsibility
+
+Avoid:
+
+- Generic agency claims
+- Fear-based AI language
+- Claims of effortless transformation
+- Empty inspirational statements
+- Excessive service lists
+- Presenting the client as deficient
+- Hiding all useful information behind a consultation
