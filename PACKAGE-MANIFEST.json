@@ -1,0 +1,303 @@
+{
+  "package": "oobcreative-knowledge-system-v1",
+  "generated": "2026-07-22",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 10509,
+      "sha256": "0e0d7827fffe4e806f7df28ed3d9a69af703d3e8f10b34289f3818b1c973d6ca"
+    },
+    {
+      "path": "KNOWLEDGE-SYSTEM-INSTALL.md",
+      "bytes": 1653,
+      "sha256": "454acfa17407c8ad851a0aed6ae1c20d693181d6b0b8375633b7a8f2a4d40e29"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 1607,
+      "sha256": "84128318fa452fd24efaf24769e54b3ca45031236e7ee69a449bdccf57765ce8"
+    },
+    {
+      "path": "docs/brand-and-voice.md",
+      "bytes": 322,
+      "sha256": "b032375ab3b277b597cbc54d66d6a6ea00b8d26b232bfdd2f2a23f4921329cb2"
+    },
+    {
+      "path": "docs/component-system.md",
+      "bytes": 343,
+      "sha256": "101eb3920b55b83f6224bff0f3282ed334320d20b6ff60b78eb94094cf4b1d3b"
+    },
+    {
+      "path": "docs/content/messaging-architecture.md",
+      "bytes": 3718,
+      "sha256": "d21533ab4ff464b8afaf2babe4904435acf3c60e3de9f8644d82410dd304a5fc"
+    },
+    {
+      "path": "docs/content/page-brief-template.md",
+      "bytes": 1824,
+      "sha256": "69b77283c36dd062fd69d2aa4fe4ecdf5283fb6d9d56137bee0208c3de47b7e0"
+    },
+    {
+      "path": "docs/content/pages/homepage-brief.md",
+      "bytes": 4508,
+      "sha256": "b658d72649e300f131b3d4694f554a6bd2a70d68babdc2d9ccba6f35c5a42f50"
+    },
+    {
+      "path": "docs/content/proof-inventory.md",
+      "bytes": 1251,
+      "sha256": "cba23eecef2bc5f27eeed94567450624bd923d9330ae7b198a4e22f7c7576658"
+    },
+    {
+      "path": "docs/design/asset-register.md",
+      "bytes": 698,
+      "sha256": "dd869eebedb93a970abccdd34d2b5460267f35be0757c6560bd02bec9025b4ca"
+    },
+    {
+      "path": "docs/design/brand-and-voice.md",
+      "bytes": 4898,
+      "sha256": "68a2eefc6e9574329b5508af1ed4e35de7a07afc9f83b3f3d0e2633ad4213942"
+    },
+    {
+      "path": "docs/design/emotional-visual-system.md",
+      "bytes": 11721,
+      "sha256": "010447b36fe1cbfde33f62c3d49e6e9d63764c4edc2fe7c7761f5f9eb3b24f56"
+    },
+    {
+      "path": "docs/design/imagery-guidelines.md",
+      "bytes": 2351,
+      "sha256": "2185c49de847570ed8d33c66a09683cfded942e8a1c0e8ce820d02cab2f99996"
+    },
+    {
+      "path": "docs/design/visual-design-system.md",
+      "bytes": 2971,
+      "sha256": "7d158854494e02da0f610004e6cb118d3476b361e09c0b18859658563ad99a05"
+    },
+    {
+      "path": "docs/governance/content-status.md",
+      "bytes": 2474,
+      "sha256": "dfdb2e3d51de02c3e917b70006d10c09b8ee15128f7cb7f6a7f5cfbce290f85b"
+    },
+    {
+      "path": "docs/governance/decision-log.md",
+      "bytes": 2338,
+      "sha256": "3a8427ec6fbb51df4e1a3c5430f33a18d3f90b2523d48a012730a5c94194212c"
+    },
+    {
+      "path": "docs/governance/glossary.md",
+      "bytes": 2122,
+      "sha256": "1107155976be372aa691ce3fd4ece7906576c919aef162fe808f9d01b1c56632"
+    },
+    {
+      "path": "docs/governance/knowledge-system.md",
+      "bytes": 5072,
+      "sha256": "ab5e655667d7cafde9070237e5b207b17326fd2b5520b2b04b67e95e298d26d7"
+    },
+    {
+      "path": "docs/governance/open-decisions.md",
+      "bytes": 6343,
+      "sha256": "08df3a4dde91fc3bc12543746295259014bd5b809736b90d5f040077efa8bc59"
+    },
+    {
+      "path": "docs/implementation/component-system.md",
+      "bytes": 3914,
+      "sha256": "c553e6adf09993768766ef6bfca908ebd265057556e3c48447328879be458057"
+    },
+    {
+      "path": "docs/implementation/content-model.md",
+      "bytes": 1864,
+      "sha256": "db6cfb971e4a0557b707afff096557b7e84acb6b69e1dae41039e1bdde4151c5"
+    },
+    {
+      "path": "docs/implementation/deployment.md",
+      "bytes": 1128,
+      "sha256": "cbb12e9b16714f4a9be9f325b0f0cd14f8a01722d31da1a4f7e0a973b6e85e0b"
+    },
+    {
+      "path": "docs/implementation/forms-and-contact.md",
+      "bytes": 1211,
+      "sha256": "4577adf504c6079de4f189b4534c26780439a30704087cbb5dcd3360b2e239c7"
+    },
+    {
+      "path": "docs/implementation/seo-map.md",
+      "bytes": 1919,
+      "sha256": "421a995a05a21ae9538cdc858c4aa8c4c193013acff9f2648d52d982906da920"
+    },
+    {
+      "path": "docs/implementation/site-structure.md",
+      "bytes": 2592,
+      "sha256": "e52b894c9e53fc378c41eeca9d87837dfa173f345c01cd94e5f4fb211787ac7a"
+    },
+    {
+      "path": "docs/knowledge-index.yaml",
+      "bytes": 2565,
+      "sha256": "69b3f6ed2cfdb323fd189d00125210798d3755c4313445ef7fcfccee955bf5f1"
+    },
+    {
+      "path": "docs/site-structure.md",
+      "bytes": 349,
+      "sha256": "b337357ae5428a64ac63bb364dca55305388f3bd43831e8f7df58a6aaa1d699e"
+    },
+    {
+      "path": "docs/source/README.md",
+      "bytes": 656,
+      "sha256": "d598cd1970ad5ce384e5554b25fa5fb80f5bedf4d034d9acb7c7d85f4dff24f5"
+    },
+    {
+      "path": "docs/source/original-strategy-package/01-core-audience-strategy.md",
+      "bytes": 2915,
+      "sha256": "6c4e67b371b8359cca5109bded73e0089035cc787959dac96b2e3dfcdda4e147"
+    },
+    {
+      "path": "docs/source/original-strategy-package/02-emotional-marketing-system.md",
+      "bytes": 3317,
+      "sha256": "da47e879a9b6ecda805c6162ed20b43bc31ef86165efcf9cc0dff8df67246b33"
+    },
+    {
+      "path": "docs/source/original-strategy-package/03-service-and-product-architecture.md",
+      "bytes": 4631,
+      "sha256": "617c69ff115471f058ee825464f3da298c1accf73f5c1fda74f245a403ad478b"
+    },
+    {
+      "path": "docs/source/original-strategy-package/04-persona-to-offer-matrix.md",
+      "bytes": 3480,
+      "sha256": "030f34a3177eb977028cba7dccc08834a2e49f4252843c5d0e8a921bd03b9d2b"
+    },
+    {
+      "path": "docs/source/original-strategy-package/05-website-navigation-and-seo.md",
+      "bytes": 3351,
+      "sha256": "45c36960c470eb453b151c355ff1f957984c3ad78e6f23e466a587cd2392d3a5"
+    },
+    {
+      "path": "docs/source/original-strategy-package/06-atlas-llm-implementation-guidance.md",
+      "bytes": 4285,
+      "sha256": "1b474221b0015fdebf33efc3d5e46a20c2c9b735efb1f17680e1b9911d896daf"
+    },
+    {
+      "path": "docs/source/original-strategy-package/README-SOURCE-NOTE.md",
+      "bytes": 256,
+      "sha256": "964d1f5029701b0667e0ecdab1615387598e6688ed6056b2910456e0928d2ab7"
+    },
+    {
+      "path": "docs/source/original-strategy-package/README.md",
+      "bytes": 1291,
+      "sha256": "cd74ce85c42c43194dc819c15862b9e46289477a1f2f33e349c783de3b2e8977"
+    },
+    {
+      "path": "docs/source/original-strategy-package/manifest.json",
+      "bytes": 909,
+      "sha256": "e645e1a90d7b21c25ea3518ca2891ece0bfa36d7e0281babfbd4fc1f52266a04"
+    },
+    {
+      "path": "docs/source/original-strategy-package/oobcreative-combined-context.md",
+      "bytes": 64372,
+      "sha256": "599965a6ab83b93da1a7d4134bbd637759cce42225ebb43a30951bac68ad0ccb"
+    },
+    {
+      "path": "docs/source/original-strategy-package/personas/brendan-overextended-communications-lead.md",
+      "bytes": 6057,
+      "sha256": "a608e6a28b572abafbb36fcf1691bc7ac3ee1e06e36105490fab5b880fba9486"
+    },
+    {
+      "path": "docs/source/original-strategy-package/personas/dave-rebuilding-leader.md",
+      "bytes": 5612,
+      "sha256": "8d93520b0bf27fbffd713a30071343b41032b4360eb099c1a3095618edd4132a"
+    },
+    {
+      "path": "docs/source/original-strategy-package/personas/devon-expert-with-unpackaged-value.md",
+      "bytes": 6133,
+      "sha256": "3ee8559f32916fe0a12d5b9c1150c79028f548f5d40a12e0dfe39a359685eaf4"
+    },
+    {
+      "path": "docs/source/original-strategy-package/personas/doug-quietly-ambitious-professional.md",
+      "bytes": 5420,
+      "sha256": "e66163a52aad90afa55a3240ce09a099ea754af63849ec2fbf8397a5ec8b938e"
+    },
+    {
+      "path": "docs/source/original-strategy-package/personas/eli-responsible-ai-adopter.md",
+      "bytes": 5674,
+      "sha256": "d43a6d6947faf957415f145c1cc1f0490a8f48e0a5b67c1c837d1ebba629c77f"
+    },
+    {
+      "path": "docs/source/original-strategy-package/personas/frederick-bottlenecked-founder.md",
+      "bytes": 6237,
+      "sha256": "9136d70c861fb2596056f8fda72aff0ea686702ecfd9a47f00315c61cc35b955"
+    },
+    {
+      "path": "docs/source/original-strategy-package/personas/jonathan-mission-carrying-executive-director.md",
+      "bytes": 6342,
+      "sha256": "f8bdd81988eb9f044e3020c216188fc58ea020d2a86b1a28875a83e391160e78"
+    },
+    {
+      "path": "docs/strategy/01-core-audience-strategy.md",
+      "bytes": 3036,
+      "sha256": "d6d0cd5e58296424316564b4b84536e8669ed2a726e5c7b44e0d7dca5f6c6ac4"
+    },
+    {
+      "path": "docs/strategy/02-emotional-marketing-system.md",
+      "bytes": 3464,
+      "sha256": "a8fe3dae3ff7e96ebbb9219f8ae5e9e051e952ca597f359044348b3435cffc3b"
+    },
+    {
+      "path": "docs/strategy/03-service-and-product-architecture.md",
+      "bytes": 4815,
+      "sha256": "7bf02bb42dafc11a04d6f8a03e75fe9c05751253ab293695ad7a02fbd6734bcc"
+    },
+    {
+      "path": "docs/strategy/04-persona-to-offer-matrix.md",
+      "bytes": 3661,
+      "sha256": "c76dae4ade43435331b7b8e54e6c49ca342ede5f17fe517cd82368002c734c66"
+    },
+    {
+      "path": "docs/strategy/05-website-navigation-and-seo.md",
+      "bytes": 3539,
+      "sha256": "73b6df6990b022b53d2eec9f66475b2f72b96bbd5c3cc97d6faacfb0cc83c850"
+    },
+    {
+      "path": "docs/strategy/06-atlas-llm-implementation-guidance.md",
+      "bytes": 4541,
+      "sha256": "7ec7d33b8f3a26e1226b289354bd237d1527ea689235c5cebca1384420d24f79"
+    },
+    {
+      "path": "docs/strategy/README.md",
+      "bytes": 745,
+      "sha256": "1e2df5c7e52786ada915aa7387fb8234cce9587e7263a23da8fa88ae42a7ad58"
+    },
+    {
+      "path": "docs/strategy/personas/brendan-overextended-communications-lead.md",
+      "bytes": 6285,
+      "sha256": "5f24f48865874cd0a6888e719cfabf772c2306c5ec74bbcae4e8695cfef87613"
+    },
+    {
+      "path": "docs/strategy/personas/dave-rebuilding-leader.md",
+      "bytes": 5837,
+      "sha256": "51b724887b40a1ec99211099c5f0413f419971021fbbdc7e6d5dc80fdc8ff964"
+    },
+    {
+      "path": "docs/strategy/personas/devon-expert-with-unpackaged-value.md",
+      "bytes": 6359,
+      "sha256": "36c75f44d5f51e3481118ba16cb8aacc49d562768af9c3d6273da06e03c1f056"
+    },
+    {
+      "path": "docs/strategy/personas/doug-quietly-ambitious-professional.md",
+      "bytes": 5645,
+      "sha256": "f0a0a1472e9cfb2997c8f1bd551864b4cdacd3390faaa8b82a70b26b6701b37b"
+    },
+    {
+      "path": "docs/strategy/personas/eli-responsible-ai-adopter.md",
+      "bytes": 5898,
+      "sha256": "6996a4cc386428f6a7b63f6df23f27654969ce2ba42376809a80fbbf9d1b64a7"
+    },
+    {
+      "path": "docs/strategy/personas/frederick-bottlenecked-founder.md",
+      "bytes": 6467,
+      "sha256": "438e5fb4a0b32c84ed0db05d3e96d89e2cbaf91ebe977ac5d953ea19525e5fda"
+    },
+    {
+      "path": "docs/strategy/personas/jonathan-mission-carrying-executive-director.md",
+      "bytes": 6571,
+      "sha256": "9351dfef1b0978a114af313411630e6d2a33343d04550a783489db98c6ce061c"
+    }
+  ],
+  "file_count_excluding_manifest": 59,
+  "manifest_note": "The manifest does not list or checksum itself."
+}

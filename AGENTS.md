@@ -2,11 +2,9 @@
 
 ## Project
 
-This repository contains the source code for the oobCREATIVE website.
+This repository contains the Astro source code and governing knowledge system for the oobCREATIVE website.
 
-The website is built with Astro and generates static files for deployment to Bluehost.
-
-The GitHub repository is the authoritative source for the website.
+The website is generated as a static site for deployment to Bluehost. GitHub is the authoritative repository.
 
 ## Project Locations
 
@@ -22,203 +20,291 @@ GitHub repository:
 https://github.com/rodneyobyrne/dev_oobcreative
 ```
 
-Local development preview:
+Local preview:
 
 ```text
 http://localhost:4321/
 ```
 
-Bluehost development website:
+Bluehost development URL:
 
 ```text
 https://website-37cf1036.rea.qfv.mybluehost.me/
 ```
 
-The Bluehost deployment workflow has not yet been configured. Do not upload or deploy files unless explicitly instructed and the destination has been confirmed.
+The exact Bluehost deployment directory and automated deployment workflow are not yet confirmed.
 
-## Source of Truth
+## Governing Principle
 
-The editable Astro source files in this GitHub repository are the source of truth.
+Do not translate a conversation directly into website code when the request changes strategy, messaging, visual direction, page structure, services, personas, pathways, proof, or positioning.
 
-Do not treat the following as authoritative source files:
+Use this sequence:
 
-- Generated files inside `dist/`
-- Files manually uploaded to Bluehost
-- Temporary previews
-- Uncommitted experiments
-- Rejected content
-- Brainstorming from conversations
+```text
+Source → Strategy → Decision → Brief → Implementation → Review → Push → Deploy
+```
 
-## Project Structure
+Code implements approved briefs. It does not invent strategy.
 
-- `src/` contains pages, layouts, components, styles, and website content.
-- `public/` contains images, icons, fonts, and other static assets.
-- `dist/` contains generated production files.
-- `node_modules/` contains installed dependencies.
-- `AGENTS.md` contains instructions for agents working in this repository.
-- `astro.config.mjs` contains Astro configuration.
-- `package.json` contains project scripts and dependencies.
+## Knowledge System
 
-Never manually edit:
+Start with:
 
-- `dist/`
-- `node_modules/`
-- `.git/`
+```text
+docs/README.md
+docs/knowledge-index.yaml
+docs/governance/knowledge-system.md
+```
 
-## Discussion and Approval
+The knowledge system separates:
 
-Strategy, ideation, brainstorming, content development, and design discussion do not authorize website changes.
-
-Do not modify website files unless the user gives an explicit website-update instruction.
-
-When reviewing a conversation, distinguish between:
-
+- Original source material
+- Canonical working strategy
 - Approved decisions
-- Rejected options
-- Brainstorming
-- Recommendations not yet accepted
-- Unresolved questions
+- Design translation
+- Content and page briefs
+- Technical implementation
+- Published website output
 
-Do not assume that every idea discussed was approved.
+## Authority and Precedence
 
-## Command Rules
+When instructions conflict, use this order:
 
-### Prepare Website Update
+1. The user’s explicit instruction in the current task
+2. Approved entries in `docs/governance/decision-log.md`
+3. Approved canonical documents listed in `docs/knowledge-index.yaml`
+4. Approved page briefs in `docs/content/`
+5. Approved implementation documents in `docs/implementation/`
+6. Working canonical documents
+7. Original files in `docs/source/`
+8. General conversation context or agent assumptions
+
+Do not silently resolve a consequential conflict. Identify it and stop before changing files.
+
+## Document Status
+
+Use only:
+
+- `working` — useful but not authorized as final direction
+- `approved` — may guide content, design, and implementation
+- `published` — represented on the live website
+- `deprecated` — retained for history but not authoritative
+
+A Git commit does not equal approval. Only an explicit user decision may promote a document from `working` to `approved`.
+
+## Canonical-Source Rule
+
+One concept must have one canonical home.
+
+Do not duplicate complete strategy across multiple documents. Supporting documents should reference the canonical source and contain only the translation needed for their purpose.
+
+The combined-context file is a compiled reference. It is not the editable source of truth.
+
+## Required Reading by Task
+
+### Audience, messaging, pathways, or services
+
+Read:
+
+```text
+docs/strategy/01-core-audience-strategy.md
+docs/strategy/02-emotional-marketing-system.md
+docs/strategy/03-service-and-product-architecture.md
+docs/strategy/04-persona-to-offer-matrix.md
+docs/content/messaging-architecture.md
+```
+
+### Persona-specific communication or visuals
+
+Read:
+
+```text
+docs/strategy/personas/
+docs/design/emotional-visual-system.md
+docs/design/imagery-guidelines.md
+```
+
+### Navigation, URLs, SEO, or page hierarchy
+
+Read:
+
+```text
+docs/strategy/05-website-navigation-and-seo.md
+docs/implementation/site-structure.md
+docs/implementation/seo-map.md
+docs/governance/open-decisions.md
+```
+
+### Page creation or revision
+
+Read the relevant approved page brief in:
+
+```text
+docs/content/pages/
+```
+
+Do not create a final page without an approved brief unless the user explicitly authorizes an exploratory prototype.
+
+### Components or global design
+
+Read:
+
+```text
+docs/implementation/component-system.md
+docs/design/visual-design-system.md
+docs/design/emotional-visual-system.md
+```
+
+## Persona Rules
+
+The named personas are internal archetypes.
+
+Do not normally publish persona names such as Frederick, Jonathan, Brendan, Devon, Eli, Dave, or Doug.
+
+Translate persona logic into:
+
+- A recognizable situation
+- A respectful emotional truth
+- The value the person is protecting
+- A desired movement
+- A concrete outcome
+- A safe and clear choice
+
+Emotional intelligence is not decorative copy. It should influence language, visuals, pacing, proof, control, and calls to action.
+
+Do not create seven disconnected visual brands or seven equal public products merely because seven personas exist.
+
+## Visual Rules
+
+Use one oobCREATIVE brand system with controlled emotional modulation.
+
+Do not use literal or stereotypical emotional imagery. Avoid:
+
+- People holding their heads to represent overwhelm
+- Chaotic-desk comedy
+- Savior imagery
+- Luxury executive clichés
+- Influencer or guru imagery
+- Robots, glowing interfaces, or science-fiction AI imagery
+- Broken-glass or disaster imagery for project recovery
+
+Prefer environmental detail, working context, close crops, meaningful objects, process evidence, and competent people operating under recognizable pressure.
+
+## Knowledge Commands
+
+### Prepare Knowledge Update
 
 When instructed:
 
-> Prepare a website update
+> Prepare a knowledge update
 
-Review the relevant conversation and provide:
+Review the conversation and report:
 
-- Clearly approved changes
-- Pages affected
-- Sections affected
+- New facts or decisions
+- Conflicts with existing documents
+- Documents affected
+- Open questions
+- Recommended status changes
+
+Do not modify files.
+
+### Update Knowledge System
+
+When instructed:
+
+> Update the knowledge system based on this conversation
+
+Modify only the relevant knowledge documents.
+
+Then report:
+
+- Documents changed
+- Decisions added or revised
+- New open questions
+- Status changes
+- Website code intentionally left unchanged
+
+Do not change website source files, commit, push, or deploy.
+
+### Approve These Decisions
+
+When instructed:
+
+> Approve these decisions
+
+Update the relevant canonical documents, document statuses, decision log, open-decision register, and knowledge index.
+
+Do not infer which decisions are approved. Use only the decisions explicitly identified by the user.
+
+## Website Commands
+
+### Prepare Website Update
+
+Review approved knowledge and the relevant page brief. Report:
+
+- Approved changes
+- Pages and sections affected
 - Files likely to change
-- Unresolved decisions
+- Blocking open decisions
 - Elements that will remain unchanged
 
 Do not modify files.
 
-Do not build, commit, push, or deploy.
-
 ### Update Website
 
-When instructed:
-
-> Update the website based on this conversation
-
-or:
-
-> Update the website with these specific changes
-
-Modify only the relevant source files.
+Modify only files authorized by approved strategy and page briefs.
 
 Then:
 
 1. Run the production build.
-2. Report which files changed.
-3. Summarize the visible website changes.
-4. Identify unresolved issues or incomplete work.
-5. Provide local preview instructions.
+2. Report files changed.
+3. Summarize visible changes.
+4. Identify unresolved or incomplete work.
+5. Provide preview instructions.
 6. Do not commit, push, or deploy.
+
+If a blocking decision remains open, stop and report it instead of inventing an answer.
 
 ### Revise These Changes
 
-When instructed:
-
-> Revise these changes
-
-Preserve previously approved work unless the user explicitly removes or replaces it.
-
-Modify only the requested items.
-
-Then:
-
-1. Run the production build.
-2. Report which files changed.
-3. Summarize the revised result.
-4. Provide local preview instructions.
-5. Do not commit, push, or deploy.
+Preserve approved work. Modify only requested items. Run the build and report the result. Do not commit, push, or deploy.
 
 ### Push These
 
-When instructed:
-
-> Push these
-
-Commit the approved changes and push them to the connected GitHub repository.
-
-Before pushing:
+Before committing and pushing:
 
 1. Confirm the production build succeeds.
 2. Confirm only approved files are included.
 3. Confirm no credentials or secrets are included.
 4. Provide a concise commit summary.
 
-Pushing to GitHub does not authorize manual deployment to Bluehost.
+Pushing does not authorize deployment.
 
 ### Deploy These
 
-When instructed:
+Do not deploy until the Bluehost destination and workflow are confirmed.
 
-> Deploy these
-
-Do not deploy unless a Bluehost deployment workflow has been configured and the destination directory has been confirmed.
-
-Before deployment:
-
-1. Confirm the production build succeeds.
-2. Confirm the correct Bluehost destination.
-3. Confirm only the contents of `dist/` will be deployed.
-4. Confirm the user explicitly authorized deployment.
-5. Confirm a rollback method exists.
-
-After deployment:
-
-1. Verify the website loads.
-2. Verify the affected pages.
-3. Report the deployment result.
-4. Report any errors or incomplete actions.
+Deploy only generated files from `dist/`. Verify the affected pages and report the result.
 
 ### Discard These
 
-When instructed:
-
-> Discard these
-
-Revert only the uncommitted changes created during the current task.
-
-Do not alter previously committed work.
-
-Do not delete unrelated files.
+Revert only uncommitted changes created during the current task. Do not alter committed work or unrelated files.
 
 ### Restore Previous Version
 
-When instructed:
-
-> Restore the previous version
-
-Identify the last approved Git commit or deployed version.
-
-Explain what will be restored before changing any files.
-
-Do not overwrite committed or deployed work without explicit confirmation.
+Identify the target commit or deployed version and explain the impact before changing anything. Require explicit confirmation.
 
 ## Protected Areas
 
-Do not change the following without explicit approval:
+Do not change without explicit approval:
 
 - Navigation structure
 - Page URLs or slugs
-- Global styles
-- Design tokens
-- Brand colors
-- Typography
+- Global styles or design tokens
+- Brand colors or typography
 - Header or footer structure
-- Reusable components
-- Forms
-- Form destinations
+- Reusable global components
+- Forms and destinations
 - Analytics
 - SEO indexing settings
 - Redirects
@@ -228,275 +314,100 @@ Do not change the following without explicit approval:
 - Bluehost configuration
 - DNS records
 - Environment variables
-- API keys
-- Passwords
-- Secrets
-- Deployment credentials
-- Deletion of pages, components, or assets
+- API keys, passwords, secrets, or deployment credentials
+- Deletion of pages, components, assets, or canonical documents
 
 ## Content Rules
 
 - Do not treat brainstorming as approved content.
 - Do not restore rejected wording.
 - Do not combine rejected alternatives.
-- Preserve approved copy unless instructed to rewrite it.
-- Do not change meaning merely to improve style.
-- Do not invent statistics, clients, testimonials, awards, credentials, or business claims.
+- Preserve approved meaning unless instructed to change it.
+- Do not invent statistics, clients, testimonials, awards, credentials, outcomes, or business claims.
+- Verify proof against `docs/content/proof-inventory.md`.
 - Flag ambiguity instead of making consequential assumptions.
-- Maintain the established oobCREATIVE voice and positioning.
-- Use plain, direct language.
-- Avoid unnecessary jargon.
-- Avoid long, comma-heavy sentences.
-- Avoid repetitive sentence openings.
-- Prefer concise, human wording.
+- Use plain, direct, emotionally perceptive language.
+- Avoid hype, fear, condescension, artificial urgency, generic agency language, and vague transformation claims.
+- Present AI as selective, human-directed support tied to real responsibilities.
 
 ## Development Standards
 
 - Use semantic HTML.
-- Maintain responsive behavior.
-- Preserve accessibility.
-- Use a logical heading hierarchy.
+- Maintain responsive behavior and accessibility.
+- Preserve logical heading order, keyboard navigation, and visible focus states.
 - Include meaningful image alt text.
-- Maintain keyboard navigation and visible focus states.
-- Avoid unnecessary JavaScript.
-- Avoid unnecessary dependencies.
-- Keep reusable interface elements in components.
-- Keep content separate from layout where practical.
-- Keep styles organized and reusable.
-- Maintain clean, readable code.
-- Avoid duplicate components and content.
-- Do not add React, Vue, Svelte, Tailwind, or another framework without explicit approval.
+- Avoid unnecessary JavaScript and dependencies.
+- Keep reusable interface patterns in components.
+- Keep page-specific content out of global components.
+- Do not add React, Vue, Svelte, Tailwind, or another framework without approval.
 
-## Development
+## Development Commands
 
-Run all project commands from:
+Run commands from:
 
 ```text
 D:\Baxter Drive\GitHub_repos\dev_oobcreative
 ```
 
-For normal human development, start the foreground server with:
+Foreground development server:
 
 ```bash
 npm run dev
 ```
 
-The local website should be available at:
-
-```text
-http://localhost:4321/
-```
-
-Stop the foreground server with:
-
-```text
-Ctrl + C
-```
-
-For AI-agent development, start the server in background mode with:
+Background agent server:
 
 ```bash
 npm run dev -- --background
 ```
 
-Check the background server:
+Manage the background server:
 
 ```bash
 npx astro dev status
-```
-
-View its current logs:
-
-```bash
 npx astro dev logs
-```
-
-Follow new log entries:
-
-```bash
 npx astro dev logs --follow
-```
-
-Stop the background server:
-
-```bash
 npx astro dev stop
 ```
 
-Do not start multiple development servers unnecessarily.
+Do not start duplicate servers unnecessarily.
 
 ## Production Build
 
-Before presenting a website update as complete, run:
+Before describing a website code change as complete, run:
 
 ```bash
 npm run build
 ```
 
-A successful build generates production files inside:
-
-```text
-dist/
-```
-
-Do not describe a change as successful if the build fails.
-
-Do not manually edit files inside `dist/`.
+Do not edit `dist/` manually.
 
 ## Git Rules
 
-- Work inside the existing repository.
-- Use the existing `main` branch unless instructed otherwise.
-- Do not create another repository.
+- Use the existing repository and `main` branch.
 - Do not run `git init`.
-- Do not change the remote repository.
-- Do not force-push.
-- Do not rewrite Git history.
-- Do not delete branches without approval.
-- Do not commit automatically unless instructed.
-- Do not push automatically unless instructed.
-- Do not commit `node_modules/`.
-- Do not commit `dist/` unless deployment requirements explicitly change.
-- Do not commit credentials, passwords, API keys, or secret environment files.
-
-Use concise commit messages describing the completed work.
-
-Examples:
-
-```text
-Add website agent instructions
-Create homepage structure
-Update homepage messaging
-Add services page
-Revise mobile navigation
-```
+- Do not change the remote.
+- Do not force-push or rewrite history.
+- Do not commit or push automatically.
+- Do not commit `node_modules/`, `dist/`, credentials, or secret environment files.
 
 ## Deployment Rules
 
-The Astro source remains in GitHub.
+GitHub remains the source of truth. Bluehost receives only the generated contents of `dist/` after deployment is configured and explicitly authorized.
 
-Only generated production files from `dist/` should be deployed to Bluehost.
-
-Do not upload these source folders:
-
-- `src/`
-- `node_modules/`
-- `.git/`
-- `.github/`
-
-Do not upload these project files unless specifically required:
-
-- `package.json`
-- `package-lock.json`
-- `astro.config.mjs`
-- `AGENTS.md`
-
-Do not assume a Bluehost server directory based only on the public website URL.
-
-Confirm the exact deployment directory before uploading anything.
-
-## Images and Assets
-
-- Store website images in `public/images/`.
-- Use descriptive lowercase filenames.
-- Use hyphens instead of spaces.
-- Optimize images before deployment.
-- Prefer WebP or AVIF where appropriate.
-- Preserve original source assets when necessary.
-- Add meaningful alt text.
-- Do not remove approved assets without explicit approval.
-- Do not invent licensing information.
-
-## SEO
-
-- Preserve approved page titles and descriptions.
-- Use one clear H1 per page.
-- Maintain a logical heading hierarchy.
-- Use descriptive URLs.
-- Do not enable search indexing for development environments without approval.
-- Do not change redirects without approval.
-- Do not invent structured-data claims.
-
-## Accessibility
-
-- Use semantic landmarks.
-- Maintain sufficient text contrast.
-- Provide visible keyboard focus.
-- Give buttons and links clear labels.
-- Provide alt text for meaningful images.
-- Use empty alt text for decorative images.
-- Associate form labels with their controls.
-- Do not rely on color alone to communicate meaning.
-- Respect reduced-motion preferences when animation is used.
-
-## Validation
-
-Before reporting a website change as complete:
-
-1. Confirm the requested change was clearly approved.
-2. Confirm only relevant files were modified.
-3. Run:
-
-```bash
-npm run build
-```
-
-4. Confirm the build succeeds.
-5. Confirm no credentials or secrets were added.
-6. Confirm protected areas were not changed without approval.
-7. Confirm responsive behavior was preserved.
-8. Confirm accessibility was preserved.
-9. Confirm links and images resolve.
-10. Provide local preview instructions.
+Do not infer a Bluehost directory from the public URL.
 
 ## Completion Report
 
-After making website changes, report:
+Report:
 
 - Request completed
-- Files changed
+- Knowledge documents changed
+- Website files changed
 - Pages affected
 - Visible changes
-- Production build result
-- Local preview address
-- Items intentionally left unchanged
-- Unresolved issues
-- Whether changes were committed
-- Whether changes were pushed
-- Whether changes were deployed
-
-## Documentation
-
-Full Astro documentation:
-
-```text
-https://docs.astro.build
-```
-
-Consult the relevant guide before making structural or configuration changes:
-
-- [Adding pages, dynamic routes, or middleware](https://docs.astro.build/en/guides/routing/)
-- [Working with Astro components](https://docs.astro.build/en/basics/astro-components/)
-- [Using React, Vue, Svelte, or other framework components](https://docs.astro.build/en/guides/framework-components/)
-- [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
-- [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
-- [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
-- [Building and deploying Astro websites](https://docs.astro.build/en/guides/deploy/)
-
-## Core Workflow
-
-No website change may be pushed or deployed merely because it was discussed.
-
-The required sequence is:
-
-```text
-Discuss
-Prepare
-Update
-Review
-Revise
-Push
-Deploy
-```
-
-The user retains final approval at every publishing stage.
+- Build result
+- Preview address
+- Items intentionally unchanged
+- Open or blocking decisions
+- Commit, push, and deployment status
