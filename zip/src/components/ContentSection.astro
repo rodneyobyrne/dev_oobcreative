@@ -1,0 +1,52 @@
+---
+import SectionHeading from './SectionHeading.astro';
+
+interface Props {
+  eyebrow?: string;
+  heading?: string;
+  body?: string;
+  surface?: boolean;
+  narrow?: boolean;
+}
+
+const {
+  eyebrow,
+  heading,
+  body,
+  surface = false,
+  narrow = false,
+} = Astro.props;
+---
+
+<section class:list={['section', { surface }]}>
+  <div class:list={['container', { 'content-width': narrow }]}>
+    {
+      heading && (
+        <SectionHeading
+          eyebrow={eyebrow}
+          heading={heading}
+          body={body}
+        />
+      )
+    }
+
+    <div class="section-content">
+      <slot />
+    </div>
+  </div>
+</section>
+
+<style>
+  .surface {
+    border-block: 1px solid var(--color-border);
+    background: var(--color-surface);
+  }
+
+  .section-content {
+    font-size: 1.05rem;
+  }
+
+  .section-content :global(p:last-child) {
+    margin-bottom: 0;
+  }
+</style>

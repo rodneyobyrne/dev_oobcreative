@@ -1,0 +1,30 @@
+{
+  "title": "oobCREATIVE Audience and Product Strategy",
+  "snapshot_date": "2026-07-22",
+  "markdown_files": [
+    "01-core-audience-strategy.md",
+    "02-emotional-marketing-system.md",
+    "03-service-and-product-architecture.md",
+    "04-persona-to-offer-matrix.md",
+    "05-website-navigation-and-seo.md",
+    "06-atlas-llm-implementation-guidance.md",
+    "README.md",
+    "oobcreative-combined-context.md",
+    "personas/brendan-overextended-communications-lead.md",
+    "personas/dave-rebuilding-leader.md",
+    "personas/devon-expert-with-unpackaged-value.md",
+    "personas/doug-quietly-ambitious-professional.md",
+    "personas/eli-responsible-ai-adopter.md",
+    "personas/frederick-bottlenecked-founder.md",
+    "personas/jonathan-mission-carrying-executive-director.md"
+  ],
+  "persona_ids": [
+    "frederick",
+    "jonathan",
+    "brendan",
+    "devon",
+    "eli",
+    "dave",
+    "doug"
+  ]
+}
