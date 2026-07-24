@@ -1,0 +1,9 @@
+---
+interface Props {
+  class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+<svg class={`hand-rule ${className}`} viewBox="0 0 1200 24" aria-hidden="true" preserveAspectRatio="none">
+  <path d="M2 13 C 130 10, 220 16, 350 12 S 600 11, 760 14 S 1040 9, 1198 12" />
+</svg>

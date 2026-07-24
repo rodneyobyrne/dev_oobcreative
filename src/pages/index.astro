@@ -1,48 +1,151 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import PageHero from '../components/PageHero.astro';
-import ContentSection from '../components/ContentSection.astro';
-import CallToAction from '../components/CallToAction.astro';
+import HandDrawnRule from '../components/HandDrawnRule.astro';
+
+const pathways = [
+  {
+    number: '01',
+    title: 'Clarify',
+    copy: 'Make valuable work easier to understand, trust, and choose.',
+    href: '/services/positioning-messaging-websites/',
+  },
+  {
+    number: '02',
+    title: 'Structure',
+    copy: 'Build communication systems and practical workflows that reduce pressure.',
+    href: '/services/communication-systems-practical-ai/',
+  },
+  {
+    number: '03',
+    title: 'Move',
+    copy: 'Bring a campaign, launch, website, or stalled initiative forward.',
+    href: '/services/campaigns-fundraising-growth/',
+  },
+];
+
+const cases = [
+  {
+    title: 'Building the Backline',
+    organization: 'Rock and Roll Academy Aspen',
+    summary: 'A connected communications and fundraising system supporting regional nonprofit growth.',
+    href: '/work/rock-and-roll-academy/',
+  },
+  {
+    title: 'Turning Expertise into a Buyer-Led Platform',
+    organization: 'Everett Health Partners',
+    summary: 'Brand, buyer architecture, website strategy, and the foundation for a scalable diagnostic platform.',
+    href: '/work/everett-health-partners/',
+  },
+  {
+    title: 'Recovery Looks Different',
+    organization: 'Varetto Recovery',
+    summary: 'A clear, credible digital experience for a personal and unconventional recovery philosophy.',
+    href: '/work/varetto-recovery/',
+  },
+];
 ---
-
 <BaseLayout
-  title="oobCREATIVE"
-  description="Strategy, content, design, and digital production for complicated communication problems."
-  noindex={true}
+  title="oobCREATIVE | Clear messaging, websites, systems and practical AI"
+  description="oobCREATIVE helps behavioral-health, mission-driven, and expert-led organizations clarify their message, build useful websites and communication systems, and apply AI responsibly."
 >
-  <PageHero
-    eyebrow="Independent strategy and production"
-    heading="Make the complicated part usable."
-    body="oobCREATIVE helps organizations organize ideas, clarify their message, and turn the work into useful digital experiences."
-    primaryLabel="Start a conversation"
-    primaryHref="/contact/"
-    secondaryLabel="Review the services"
-    secondaryHref="/services/"
-  />
+  <section class="hero section section--first">
+    <div class="site-shell hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Human-led strategy and implementation</p>
+        <h1>
+          Complex work deserves communication people can
+          <span class="tone-shift">understand, trust, and use.</span>
+        </h1>
+        <p class="hero__intro">
+          oobCREATIVE helps behavioral-health, mission-driven, and expert-led organizations clarify their message, build useful websites and communication systems, and apply AI responsibly.
+        </p>
+        <div class="button-row">
+          <a class="button button--solid" href="#paths">See How We Help</a>
+          <a class="text-link" href="/work/">View the Work <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
 
-  <ContentSection
-    eyebrow="Foundation"
-    heading="Strategy and execution should connect."
-    body="The website framework is now built around reusable components rather than one-off page layouts."
-    surface={true}
-    narrow={true}
-  >
-    <p>
-      Content can be developed separately, reviewed normally, and then
-      applied to the website through a controlled update process.
-    </p>
+      <div class="hero__mark" aria-hidden="true">
+        <div class="hero__mark-line"></div>
+        <div class="hero__mark-note">clear enough to act</div>
+      </div>
+    </div>
+    <HandDrawnRule />
+  </section>
 
-    <p>
-      Final positioning, design decisions, services, and portfolio content
-      will replace this temporary foundation copy.
-    </p>
-  </ContentSection>
+  <section id="paths" class="section section--tight">
+    <div class="site-shell">
+      <div class="section-intro section-intro--split">
+        <div>
+          <p class="eyebrow">Where clarity creates momentum</p>
+          <h2>What has outgrown the way you are working?</h2>
+        </div>
+        <p>
+          Start with the situation that feels familiar. The service comes after the problem is understood.
+        </p>
+      </div>
 
-  <CallToAction
-    eyebrow="Development status"
-    heading="The reusable website system is active."
-    body="The next stage will establish the visual design system and begin the approved homepage."
-    primaryLabel="Start a conversation"
-    primaryHref="/contact/"
-  />
+      <div class="path-grid">
+        {pathways.map((path) => (
+          <article class="path-card">
+            <span class="path-card__number">{path.number}</span>
+            <h3>{path.title}</h3>
+            <p>{path.copy}</p>
+            <a class="text-link" href={path.href}>Explore this path <span aria-hidden="true">→</span></a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--contrast">
+    <div class="site-shell selected-work">
+      <div class="selected-work__heading">
+        <p class="eyebrow">Selected work</p>
+        <h2>Real work. Connected thinking. Useful systems.</h2>
+      </div>
+
+      <div class="case-grid">
+        {cases.map((item) => (
+          <article class="case-card">
+            <div class="case-card__line" aria-hidden="true"></div>
+            <p class="case-card__org">{item.organization}</p>
+            <h3>{item.title}</h3>
+            <p>{item.summary}</p>
+            <a class="text-link" href={item.href}>View case study <span aria-hidden="true">→</span></a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="site-shell split-callout">
+      <div>
+        <p class="eyebrow">Who we help</p>
+        <h2>Built for organizations carrying work that matters.</h2>
+      </div>
+      <div class="split-callout__list">
+        <a href="/who-we-help/behavioral-health-human-services/">Behavioral health and human services <span>→</span></a>
+        <a href="/who-we-help/nonprofits-community-organizations/">Nonprofits and community organizations <span>→</span></a>
+        <a href="/who-we-help/expert-led-firms-consultants/">Expert-led firms and consultants <span>→</span></a>
+      </div>
+    </div>
+    <HandDrawnRule />
+  </section>
+
+  <section class="section section--final">
+    <div class="site-shell final-cta">
+      <div>
+        <p class="eyebrow">Start with what is real</p>
+        <h2>What needs to become clearer, more usable, or easier to carry?</h2>
+      </div>
+      <div>
+        <p>
+          The first conversation confirms the problem, scope, and next step. It does not hide the solution behind an undefined consultation.
+        </p>
+        <a class="button button--solid" href="/start-a-conversation/">Start a Conversation</a>
+      </div>
+    </div>
+  </section>
 </BaseLayout>

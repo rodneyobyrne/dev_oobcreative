@@ -1,81 +1,18 @@
----
-const currentYear = new Date().getFullYear();
----
-
 <footer class="site-footer">
-  <div class="container footer-grid">
+  <div class="site-shell site-footer__grid">
     <div>
-      <a class="footer-brand" href="/">oobCREATIVE</a>
-      <p class="footer-description">
-        Strategy, content, design, and digital production for complicated
-        communication problems.
-      </p>
+      <img class="site-footer__logo" src="/branding/oob_horiz-flat-dark.png" alt="oobCREATIVE" width="286" height="68" />
+      <p class="site-footer__statement">Go deeper, not louder.</p>
     </div>
 
     <nav aria-label="Footer navigation">
+      <a href="/who-we-help/">Who We Help</a>
       <a href="/services/">Services</a>
       <a href="/work/">Work</a>
       <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
-      <a href="/privacy/">Privacy</a>
+      <a href="/start-a-conversation/">Start a Conversation</a>
     </nav>
-  </div>
 
-  <div class="container footer-bottom">
-    <p>© {currentYear} oobCREATIVE</p>
+    <p class="site-footer__legal">© {new Date().getFullYear()} oobCREATIVE. All rights reserved.</p>
   </div>
 </footer>
-
-<style>
-  .site-footer {
-    padding-block: var(--space-7) var(--space-4);
-    border-top: 1px solid var(--color-border);
-    background: var(--color-surface);
-  }
-
-  .footer-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: var(--space-6);
-  }
-
-  .footer-brand {
-    font-size: 1.15rem;
-    font-weight: 800;
-    text-decoration: none;
-  }
-
-  .footer-description {
-    max-width: 34rem;
-    margin-top: var(--space-3);
-    color: var(--color-muted);
-  }
-
-  nav {
-    display: grid;
-    align-content: start;
-    gap: 0.65rem;
-  }
-
-  nav a {
-    text-decoration: none;
-  }
-
-  .footer-bottom {
-    margin-top: var(--space-6);
-    padding-top: var(--space-4);
-    border-top: 1px solid var(--color-border);
-    color: var(--color-muted);
-    font-size: 0.875rem;
-  }
-
-  .footer-bottom p {
-    margin: 0;
-  }
-
-  @media (max-width: 42rem) {
-    .footer-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
