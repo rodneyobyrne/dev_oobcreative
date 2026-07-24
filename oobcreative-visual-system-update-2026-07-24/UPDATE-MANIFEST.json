@@ -1,0 +1,16 @@
+{
+  "title": "oobCREATIVE Visual System Update",
+  "date": "2026-07-24",
+  "commit_message": "Define visual system and add approved logo",
+  "files": [
+    "docs/design/visual-direction.md",
+    "docs/design/imagery-guidelines.md",
+    "docs/design/logo-usage.md",
+    "docs/design/asset-register.md",
+    "docs/implementation/visual-component-guidance.md",
+    "docs/governance/decisions/2026-07-24-visual-direction.md",
+    "public/brand/oobcreative-logo.png",
+    "REPOSITORY-UPDATE-INSTRUCTIONS.md",
+    "UPDATE-MANIFEST.json"
+  ]
+}
