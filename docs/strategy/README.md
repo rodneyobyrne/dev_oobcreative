@@ -16,8 +16,7 @@ Read in this order:
 3. `03-service-and-product-architecture.md`
 4. `04-persona-to-offer-matrix.md`
 5. `05-website-navigation-and-seo.md`
-6. `06-llm-implementation-guidance.md`
-7. `personas/`
+6. `personas/`
 
 These files are normalized working copies of the source package. They remain `working` until explicitly approved.
 

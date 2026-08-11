@@ -54,11 +54,6 @@ documents:
     role: strategy
     status: working
     canonical: true
-  - id: llm-implementation-guidance
-    path: docs/strategy/06-llm-implementation-guidance.md
-    role: strategy
-    status: working
-    canonical: true
   - id: brand-and-voice
     path: docs/design/brand-and-voice.md
     role: design

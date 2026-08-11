@@ -24,7 +24,7 @@ This directory organizes the strategic, emotional, visual, content, and implemen
 | Directory | Purpose |
 |---|---|
 | `source/` | Unchanged source material and historical reference |
-| `strategy/` | Canonical audience, persona, emotional, offer, SEO, and LLM strategy |
+| `strategy/` | Canonical audience, persona, emotional, offer, and SEO strategy |
 | `design/` | Brand, emotional-visual translation, imagery, and visual-system rules |
 | `content/` | Messaging architecture, proof, and page briefs |
 | `implementation/` | Site structure, components, content model, forms, SEO, and deployment |

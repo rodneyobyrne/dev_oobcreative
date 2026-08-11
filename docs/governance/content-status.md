@@ -18,7 +18,6 @@ source_of_truth: true
 | Services and offers | `strategy/03-service-and-product-architecture.md` | working | Launch service families and boundaries |
 | Persona relationships | `strategy/04-persona-to-offer-matrix.md` | working | Persona priority |
 | Navigation and SEO | `strategy/05-website-navigation-and-seo.md` | working | Public pathway architecture and launch navigation |
-| LLM guidance | `strategy/06-llm-implementation-guidance.md` | working | Approval and integration into workflow |
 | Brand and voice | `design/brand-and-voice.md` | working | Final positioning and proof |
 | Emotional visual system | `design/emotional-visual-system.md` | working | Shared visual constants |
 | Visual design system | `design/visual-design-system.md` | working | Palette, typography, image treatment, motion |
