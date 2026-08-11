@@ -1,9 +1,30 @@
 ---
 interface Props {
+  orientation?: "horizontal" | "vertical";
   class?: string;
+  decorative?: boolean;
 }
-const { class: className = '' } = Astro.props;
+
+const {
+  orientation = "horizontal",
+  class: className = "",
+  decorative = true,
+} = Astro.props;
+
+const isVertical = orientation === "vertical";
 ---
-<svg class={`hand-rule ${className}`} viewBox="0 0 1200 24" aria-hidden="true" preserveAspectRatio="none">
-  <path d="M2 13 C 130 10, 220 16, 350 12 S 600 11, 760 14 S 1040 9, 1198 12" />
-</svg>
+
+<span
+  class:list={[
+    "hand-rule",
+    isVertical ? "hand-rule--vertical" : "hand-rule--horizontal",
+    className,
+  ]}
+  aria-hidden={decorative ? "true" : undefined}
+>
+  <span class="hand-rule__stroke hand-rule__stroke--one"></span>
+
+  {!isVertical && (
+    <span class="hand-rule__stroke hand-rule__stroke--two"></span>
+  )}
+</span>

@@ -1,98 +1,38 @@
----
-id: imagery-guidelines
-document_type: design-standard
-status: approved
-owner: Rodney O'Byrne
-last_reviewed: 2026-07-24
-source_of_truth: true
----
-
 # Imagery Guidelines
 
-## Default rule
+## Default Rule
 
-Use no photograph unless the content or persona gains meaningful emotional or practical value from it.
+Typography, whitespace, structure, and the approved mark come before imagery.
 
-The standard oobCREATIVE page should work through typography, white space, structure, and sparse hand-drawn marks.
+## Use Imagery When
 
-## Approved photography style
+- lived context materially improves understanding
+- the persona needs human reassurance
+- the work itself benefits from visual proof
+- a case study requires evidence of production or environment
 
-When photography is appropriate, prefer:
+## Preferred Subjects
 
-- Close-up actions
-- Hands writing, drawing, arranging, reviewing, building, or making
-- Working materials and physical details
-- Cropped environments
-- Evidence of process
-- Human presence without relying on faces
+- hands drawing or marking
+- documents under review
+- notes being arranged
+- paper and screen interaction
+- tools in use
+- close-up working details
 
-Avoid:
+## Avoid
 
-- Happy-face stock photography
-- Full-body silhouettes
-- Generic teams around a conference table
-- Heroic founder portraits
-- People staring out windows
-- Staged collaboration
-- Futuristic AI imagery
-- Robots, glowing interfaces, or science-fiction visuals
-- Sentimental nonprofit imagery
-
-## Quantity and placement
-
-- Use one meaningful image at a time.
-- Do not create image-heavy sections.
-- Do not repeat similar photographs across adjacent sections.
-- Case-study grids may use thumbnails, but the page should still feel sparse.
-- A page may remain entirely typographic when imagery adds no meaningful value.
+- generic smiling people
+- stock-office teams
+- decorative lifestyle photography
+- image-heavy section stacks
+- repeated visual tiles without a content reason
+- AI-generated brand marks or approximations
 
 ## Treatment
 
-Preferred treatment:
-
-- Black-and-white or restrained neutral toning
-- High contrast without losing detail
-- Tight crop
-- Clear focal action
-- Minimal background distraction
-- Partial hand-drawn frame or line accent only when useful
-
-Do not place doodles over important photographic content.
-
-## Persona-specific direction
-
-### Frederick — Controlled pressure
-
-Show review, approval, accumulated materials, or decisions converging on one person. Avoid luxury executive imagery.
-
-### Jonathan — Heavy responsibility
-
-Use program, community, documentation, or shared-work details. Avoid savior imagery and emotional exploitation.
-
-### Brendan — Contained irritation
-
-Show layered requests, marked-up materials, calendars, revisions, or competing inputs. Preserve competence; avoid exaggerated burnout.
-
-### Devon — Intellectual frustration
-
-Show notes, diagrams, books, frameworks, or ideas being organized. Avoid guru and personal-brand imagery.
-
-### Eli — Alert caution
-
-Show evaluation, review, comparison, or workflow testing. Technology may be visible but must not dominate.
-
-### Dave — Guarded distrust
-
-Show existing materials being examined, annotated, salvaged, or sequenced. Avoid disaster clichés.
-
-### Doug — Hopeful hesitation
-
-Show preparation moving toward a simple real-world test. Avoid startup-celebration imagery.
-
-## Accessibility and rights
-
-- Every informative image requires meaningful alt text.
-- Decorative images should use empty alt text.
-- Record source, creator, usage rights, and approved pages.
-- Do not publish an image without confirmed rights.
-- Do not place essential text inside images.
+- black and white or restrained gray
+- tight crop
+- one image at a time
+- sparse hand-drawn frame only when useful
+- preserve ample whitespace around the image

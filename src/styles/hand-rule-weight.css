@@ -1,0 +1,25 @@
+/* Codified from approved browser-inspector adjustments.
+   Decorative structural rules only.
+   Navbar, footer, buttons, CTA frames, and form borders remain unchanged.
+*/
+
+.hand-rule--horizontal .hand-rule__stroke--one {
+  top: 1px;
+  height: 12px;
+  transform: rotate(-0.12deg);
+}
+
+.hand-rule--vertical {
+  width: 9px;
+  min-height: 100%;
+  align-self: stretch;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.hand-rule--vertical .hand-rule__stroke--one {
+  left: 1px;
+  width: 2px;
+  transform: rotate(0.12deg);
+}
+

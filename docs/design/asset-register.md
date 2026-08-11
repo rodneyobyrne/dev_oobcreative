@@ -1,55 +1,35 @@
 ---
 id: asset-register
-document_type: asset-index
+title: oobCREATIVE Asset Register
 status: approved
-owner: Rodney O'Byrne
-last_reviewed: 2026-07-24
-source_of_truth: true
+last_reviewed: 2026-07-29
 ---
 
-# Asset Register
+# oobCREATIVE Asset Register
 
-## Approved brand assets
+## Primary mark
 
-All current logo assets are stored in:
+- **File:** `public/branding/Mark.svg`
+- **Role:** Primary website identity
+- **Use:** Global header, homepage navigation, mobile header, compact interface locations
+- **Rule:** Use the mark alone in routine site navigation. Do not pair it with the wordmark in the global header.
 
-```text
-public/branding/
-```
+## Formal footer lockup
 
-Astro website paths omit `public` and begin with `/branding/`.
+- **File:** `public/branding/logo_horiz#111111_background.png`
+- **Website URL:** `/branding/logo_horiz%23111111_background.png`
+- **Role:** Complete `Mark + oobCREATIVE` signature for dark backgrounds
+- **Use:** Footer and other formal or official brand moments
 
-| Asset | Repository path | Website path | Status | Approved use |
-|---|---|---|---|---|
-| Horizontal logo for dark backgrounds | `public/branding/oob_horiz-flat-dark.png` | `/branding/oob_horiz-flat-dark.png` | Approved | Dark headers, dark sections, dark footer |
-| Horizontal logo for light backgrounds | `public/branding/oob_horiz-flat-lite.png` | `/branding/oob_horiz-flat-lite.png` | Approved | Default light page header and light surfaces |
-| Stacked lockup, bottom arrangement | `public/branding/Logo_stack-bot.png` | `/branding/Logo_stack-bot.png` | Approved, limited | Approved stacked brand applications only |
-| Stacked lockup, top arrangement | `public/branding/Logo_stack-top.png` | `/branding/Logo_stack-top.png` | Approved, limited | Approved stacked brand applications only |
-| Standalone mark | `public/branding/Mark.png` | `/branding/Mark.png` | Restricted | Brand asset; not a recurring decorative icon |
+The `#` character must be percent-encoded as `%23` when the filename is used in a browser URL.
 
-## Logo restrictions
+## Additional lockups
 
-- Preserve each approved file without redrawing or reinterpretation.
-- Do not recreate the logo using live text.
-- Do not distort, crop, rotate, add effects, or recolor the files.
-- Do not use `Mark.png` as a repeated icon or doodle.
-- Do not create a second `public/brand/` directory.
-- Do not add duplicate generated logo files.
+Existing horizontal and stacked lockups may be retained for approved external or formal uses. They are not the default website-header identity.
 
-## Future vector files
+## Usage hierarchy
 
-Verified vector versions may be added later under `public/branding/` after visual review. Do not auto-trace PNG files and treat the result as approved artwork without review.
-
-## Asset intake fields
-
-Record the following for every new visual asset:
-
-- File name
-- Repository path
-- Source or creator
-- Usage rights
-- Date added
-- Approved pages
-- Alt text
-- Crop notes
-- Status: working, approved, published, or deprecated
+1. `Mark.svg` signals presence inside the oobCREATIVE environment.
+2. The complete lockup confirms identity in formal locations.
+3. Do not repeat the full lockup in routine navigation.
+4. Do not use the mark as a repeated decorative icon.

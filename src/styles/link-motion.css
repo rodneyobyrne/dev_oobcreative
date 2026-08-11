@@ -1,0 +1,140 @@
+/* oobCREATIVE link and hover motion
+   Approved interaction behavior:
+   - navigation links draw an underline left-to-right
+   - text links draw an underline left-to-right
+   - button hover states remain strongly contrasting and readable
+   - navigation/footer structure is otherwise unchanged
+*/
+
+:root {
+  --motion-fast: 160ms;
+  --motion-medium: 240ms;
+  --motion-ease: cubic-bezier(.65, 0, .2, 1);
+}
+
+/* Navigation links: animated underline, left to right. */
+.site-nav a:not(.site-nav__cta) {
+  position: relative;
+  padding-bottom: 0.42rem;
+}
+
+.site-nav a:not(.site-nav__cta)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--motion-medium) var(--motion-ease);
+}
+
+.site-nav a:not(.site-nav__cta):hover::after,
+.site-nav a:not(.site-nav__cta):focus-visible::after,
+.site-nav a:not(.site-nav__cta)[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+/* Standard text links: animated underline, left to right. */
+.text-link {
+  position: relative;
+  border-bottom: 0;
+  padding-bottom: 0.38rem;
+}
+
+.text-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--motion-medium) var(--motion-ease);
+}
+
+.text-link:hover::after,
+.text-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.text-link > span {
+  transition: transform var(--motion-fast) ease;
+}
+
+.text-link:hover > span,
+.text-link:focus-visible > span {
+  transform: translateX(0.22rem);
+}
+
+/* Buttons remain geometric; hover states invert for clear contrast. */
+.button,
+.site-nav__cta {
+  transition:
+    background-color var(--motion-fast) ease,
+    color var(--motion-fast) ease,
+    border-color var(--motion-fast) ease;
+}
+
+.button--outline:hover,
+.button--outline:focus-visible {
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
+}
+
+.button--primary:hover,
+.button--primary:focus-visible {
+  background: #ffffff;
+  color: #111111;
+  border-color: #111111;
+}
+
+.site-nav__cta:hover,
+.site-nav__cta:focus-visible {
+  background: #ffffff;
+  color: #111111;
+  border-color: #ffffff;
+}
+
+/* Strong, visible keyboard focus without changing the brand system. */
+.site-nav a:focus-visible,
+.text-link:focus-visible,
+.button:focus-visible,
+.site-nav__cta:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+/* Prevent visited-link color changes from reducing contrast. */
+.site-nav a:visited,
+.text-link:visited,
+.button:visited,
+.site-nav__cta:visited {
+  color: inherit;
+}
+
+.site-nav__cta:visited {
+  color: #ffffff;
+}
+
+.site-nav__cta:hover,
+.site-nav__cta:focus-visible,
+.site-nav__cta:visited:hover,
+.site-nav__cta:visited:focus-visible {
+  color: #111111;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav a:not(.site-nav__cta)::after,
+  .text-link::after,
+  .text-link > span,
+  .button,
+  .site-nav__cta {
+    transition: none;
+  }
+}

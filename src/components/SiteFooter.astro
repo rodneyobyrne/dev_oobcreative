@@ -1,18 +1,41 @@
+---
+const year = new Date().getFullYear();
+---
+
 <footer class="site-footer">
-  <div class="site-shell site-footer__grid">
-    <div>
-      <img class="site-footer__logo" src="/branding/oob_horiz-flat-dark.png" alt="oobCREATIVE" width="286" height="68" />
-      <p class="site-footer__statement">Go deeper, not louder.</p>
+  <div class="site-shell site-footer__main">
+    <div class="site-footer__brand">
+      <img
+        src="/branding/logo_horiz-hex111111_background.png"
+        alt="oobCREATIVE"
+        width="230"
+        loading="lazy"
+      />
+      <p>Go deeper, not louder.</p>
     </div>
 
-    <nav aria-label="Footer navigation">
-      <a href="/who-we-help/">Who We Help</a>
-      <a href="/services/">Services</a>
-      <a href="/work/">Work</a>
-      <a href="/about/">About</a>
-      <a href="/start-a-conversation/">Start a Conversation</a>
-    </nav>
+    <div class="site-footer__links">
+      <div>
+        <p class="footer-label">Explore</p>
+        <a href="/who-we-help/">Who We Help</a>
+        <a href="/services/">Services</a>
+        <a href="/work/">Work</a>
+        <a href="/about/">About</a>
+      </div>
 
-    <p class="site-footer__legal">© {new Date().getFullYear()} oobCREATIVE. All rights reserved.</p>
+      <div>
+        <p class="footer-label">Connect</p>
+        <a href="/start-a-conversation/">Start a Conversation</a>
+        <a href="mailto:hello@oobcreative.com">hello@oobcreative.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer__bar">
+    <div class="site-shell site-footer__bar-inner">
+      <span>© 2018–{year} oobCREATIVE. All rights reserved.</span>
+      <span>Roaring Fork Valley, Colorado</span>
+      <a href="/privacy-policy/">Privacy Policy</a>
+    </div>
   </div>
 </footer>
