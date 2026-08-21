@@ -13,9 +13,14 @@
     <feTurbulence type="fractalNoise" baseFrequency="0.065 0.11" numOctaves="2" seed="43" result="noise"/>
     <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.28" xChannelSelector="R" yChannelSelector="B"/>
   </filter>
+  <filter id="front-corner-ink" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.014 0.038" numOctaves="1" seed="29" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.22" xChannelSelector="R" yChannelSelector="G" result="drift"/>
+    <feGaussianBlur in="drift" stdDeviation="0.03"/>
+  </filter>
 </defs>
 <style>
-  .line{fill:none;stroke:#000;stroke-width:2.25;stroke-linecap:round;stroke-linejoin:round;
+  .line{fill:none;stroke:#fff;stroke-width:2.25;stroke-linecap:round;stroke-linejoin:round;
     stroke-dasharray:300;stroke-dashoffset:300;animation-duration:3.35s;
     animation-iteration-count:infinite;animation-fill-mode:both}
   .fine{stroke-width:2.25}.heavy{stroke-width:3.05}.thinspot{stroke-width:1.55}
@@ -26,8 +31,13 @@
   .line.cornerline{stroke-width:2.25}
   .line.frontseam{stroke-width:2.85}
   .line.lidpeak{stroke-linejoin:miter;stroke-miterlimit:3.5}
-  .line.frontlidcorner{stroke-linejoin:miter;stroke-miterlimit:2.2}
+  .line.frontlidcorner{stroke-width:2.35;stroke-linejoin:miter;stroke-miterlimit:2.2;filter:url(#front-corner-ink)}
   .line{filter:url(#ink-rough-a)}
+  .shade{opacity:0;animation-duration:3.35s;animation-iteration-count:infinite;animation-fill-mode:both}
+  .wall-shade{animation-name:wallFill}
+  .wall-left{fill:#1c1c1c}
+  .wall-rear{fill:#252525}
+  .bottom-shade{fill:#000000;animation-name:bottomFill}
   .p1{animation-name:d1}.p2{animation-name:d2}.p3{animation-name:d3}
   .p4{animation-name:d4}.p5{animation-name:d5}.p6{animation-name:d6}.p7{animation-name:d7}
   @keyframes d1{0%,2%{stroke-dashoffset:300}15%,100%{stroke-dashoffset:0}}
@@ -37,8 +47,16 @@
   @keyframes d5{0%,34%{stroke-dashoffset:300}47%,100%{stroke-dashoffset:0}}
   @keyframes d6{0%,42%{stroke-dashoffset:300}55%,100%{stroke-dashoffset:0}}
   @keyframes d7{0%,50%{stroke-dashoffset:300}64%,100%{stroke-dashoffset:0}}
-  @media(prefers-reduced-motion:reduce){.line{animation:none;stroke-dashoffset:0}}
+  @keyframes wallFill{0%,34%{opacity:0}42%,100%{opacity:1}}
+  @keyframes bottomFill{0%,50%{opacity:0}59%,100%{opacity:1}}
+  @media(prefers-reduced-motion:reduce){.line{animation:none;stroke-dashoffset:0}.shade{animation:none;opacity:1}}
 </style>
+<rect x="0" y="45" width="210" height="175" fill="#000"/>
+<g aria-hidden="true">
+  <path class="shade wall-shade wall-left" d="M8 130 C20 119 39 111 57 101 C64 97 70 92 75 91 C76 101 78 113 79 122 C72 130 62 139 47 147 C36 143 22 135 8 130 Z"/>
+  <path class="shade wall-shade wall-rear" d="M75 91 C82 93 89 97 95 99 C94 108 92 119 91 129 C87 127 83 124 79 122 C78 113 76 101 75 91 Z"/>
+  <path class="shade bottom-shade" d="M47 147 C58 141 69 131 79 122 C84 124 89 129 92.8 132.5 C92 141 91 152 94 160 C90 164 86 166 82 166 C69 162 58 154 47 147 Z"/>
+</g>
 <g aria-hidden="true">
   <!-- Upper-left flap: irregular outside rim and inward fold -->
   <path class="line heavy p1" d="M8 130 C20 119 39 111 57 101 C64 97 70 92 75 91"/>
@@ -53,14 +71,14 @@
 
   <!-- Tall center fold, traced on both sides -->
   <path class="line heavy lidpeak p2" d="M95 99 C101 91 108 80 114 72 C124 76 130 84 138 89 C146 95 154 98 164 105 C171 108 179 114 188 118 C194 121 196 126 196 132"/>
-  <path class="line frontlidcorner p3" d="M114 72 C116 86 114 101 111 116 C110 121 109 124 108 126 L94 160"/>
+  <path class="line frontlidcorner p3" d="M114 72 C113.4 88 114.2 106 113.7 121 C113.6 123.5 114.3 125.2 114 126 C108.3 136.7 101.2 150.1 94 160"/>
   <path class="line p3" d="M95 99 C96 111 94 124 92 138 C90 148 90 156 94 160"/>
 
   <!-- Upper-right flap: scalloped upper contour -->
   <path class="line heavy p4" d="M196 132 C198 144 200 159 201 176"/>
 
   <!-- Lower-right flap: inner seam, rounded nose, and lower return -->
-  <path class="line heavy p5" d="M108 126 C121 131 134 140 147 148 C161 157 182 168 201 176"/>
+  <path class="line heavy p5" d="M114 126 C125 132 136 140 147 148 C161 157 182 168 201 176"/>
   <path class="line heavy p5" d="M201 176 C192 184 183 197 174 207"/>
   <path class="line heavy p6" d="M174 207 C163 200 149 193 135 184 C122 176 108 169 94 160"/>
 
@@ -80,4 +98,6 @@
   <path class="line p7" d="M94 160 C102 166 112 173 120 178"/>
 </g>
 </svg>
+
+
 
