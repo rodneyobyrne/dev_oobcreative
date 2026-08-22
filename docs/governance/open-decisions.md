@@ -3,258 +3,151 @@ id: open-decisions
 title: Open Decisions Register
 status: working
 owner: Rodney O'Byrne
-last_reviewed: 2026-07-22
+last_reviewed: 2026-08-22
 source_of_truth: true
 ---
 
 # Open Decisions Register
 
-These questions should be resolved deliberately. They should not be answered incidentally inside website code.
+Only unresolved decisions remain here. Resolved items belong in `decision-log.md`.
 
-## Decision levels
+## Resolved on 2026-08-22
 
-- **Blocking:** prevents reliable page design or implementation
-- **Non-blocking:** can proceed with a reversible working assumption
-- **Deferred:** intentionally postponed until evidence or content exists
+The following July blockers are no longer blockers:
 
----
-
-## OD-001 — Homepage archetype priority
-
-**Level:** Blocking  
-**Affects:** Hero, recognition sequence, imagery, proof, CTA, pathway order
-
-### Question
-
-Which archetypes should receive the strongest homepage emphasis at launch?
-
-### Known
-
-All seven archetypes are strategically useful, but they differ in commercial value, authority, urgency, proof needs, and likely engagement size.
-
-### Options
-
-1. Give all seven equal emphasis.
-2. Lead with a small set of primary archetypes and support the rest later on the page.
-3. Use universal opening language and reveal archetype-specific recognition through progressive sections.
-
-### Working recommendation
-
-Use universal positioning in the hero. Prioritize a small number of emotional conditions in the first recognition section. Preserve routes for all relevant archetypes without presenting seven equal choices at once.
-
-### Decision needed
-
-Identify primary, secondary, and conditional archetypes for launch.
-
----
-
-## OD-002 — Public pathway architecture
-
-**Level:** Blocking  
-**Affects:** Homepage, navigation, page count, URLs, components
-
-### Question
-
-Where should the seven recognizable situations live?
-
-### Options
-
-1. Homepage section only
-2. Separate `Start Here` page
-3. Homepage previews leading to pathway detail pages
-4. Guided screening interaction
-
-### Working recommendation
-
-Do not add `Start Here` to global navigation automatically. First determine how much distinct content each pathway can support and how visitors should move from recognition to services.
-
----
-
-## OD-003 — Launch service families
-
-**Level:** Blocking  
-**Affects:** Services page, SEO, navigation, offers, CTAs
-
-### Question
-
-Which of the five working service families are ready for public launch?
-
-### Needs confirmation
-
-- Message, Positioning and Identity
-- Website Strategy and Visual Refresh
-- Communication Systems and Practical AI
-- Campaigns, Launches and Storytelling
-- Ongoing Communications Support
-
-### Additional questions
-
-- Is ongoing support available immediately?
-- Is practical AI a service family, a capability within other work, or both?
-- How should video, audio, and media production appear?
-
----
-
-## OD-004 — Shared visual brand constants
-
-**Level:** Blocking  
-**Affects:** Global CSS, imagery, page composition, components
-
-### Question
-
-What visual rules remain constant across every archetype?
-
-### Decisions required
-
-- Core palette
-- Typography
-- Layout character
-- Image treatment
-- Texture
-- Border and shape language
-- Motion
-- Degree of asymmetry
-- Illustration versus photography
-- Accessibility constraints
-
-### Guardrail
-
-Archetypes may modulate emotional temperature. They may not create unrelated visual brands.
+- **OD-001 Homepage archetype priority:** resolved through universal emotional recognition plus persona-informed review options rather than equal public persona cards.
+- **OD-002 Public pathway architecture:** resolved. The homepage hero begins the free review. No separate `Start Here` destination is required.
+- **OD-003 Launch service families:** resolved for working architecture as four public capability families: AI/Workflow/Business Systems; Websites/Digital Experiences; Brand/Messaging/Audience; Campaigns/Media/Communications. Ongoing support and project recovery remain contextual/participation layers.
+- **OD-004 Shared visual brand constants:** resolved through Concept 1 / Operator's Clarity, the updated visual design system, ballpoint blue interaction accent, restrained secondary warm signal, and existing oobCREATIVE brand rules.
+- **OD-007 How We Work presentation:** resolved as on-page participation choices: DIY Assist, Co-Create, Custom Services. Not required as a primary navigation destination.
+- **OD-010 Navigation at launch:** resolved as Services, Answers, Work, About, Talk, with homepage anchors allowed until deeper pages are justified.
 
 ---
 
 ## OD-005 — Proof inventory and publication permission
 
-**Level:** Blocking for final copy  
-**Affects:** Work page, homepage credibility, service pages, About page
+**Level:** Blocking for detailed proof/case-study publication  
+**Affects:** Work section, case studies, homepage credibility, service pages, About
 
-### Question
+### Needed
 
-Which evidence may be published?
+Confirm what may be publicly used:
 
-### Inventory required
+- client names
+- logos
+- project descriptions
+- screenshots
+- before/after examples
+- metrics/outcomes
+- testimonials
+- professional-history claims
+- confidentiality limits
 
-- Client names
-- Logos
-- Project descriptions
-- Screenshots
-- Before-and-after examples
-- Outcomes
-- Testimonials
-- Professional history
-- Confidentiality restrictions
+### Rule
 
-### Working rule
-
-No proof claim may be published until it appears in `content/proof-inventory.md` with permission status.
+Until verified, use conservative descriptions and do not invent or imply quantified business outcomes.
 
 ---
 
-## OD-006 — Offer safety and boundaries
+## OD-006 — Offer safety, scope, and boundaries
 
-**Level:** Blocking for service-page approval  
-**Affects:** Trust, qualification, calls, proposals
+**Level:** Blocking for final service-detail pages; non-blocking for current overview  
+**Affects:** Service pages, qualification, proposals
 
-### Decisions required
+### Needed for each deeper service page
 
-For each public service family:
-
-- Typical outputs
-- Client decisions
-- Participation level
-- Duration
-- Investment presentation
-- Exclusions
-- Early visible win
-- Completion evidence
-
----
-
-## OD-007 — How We Work presentation
-
-**Level:** Non-blocking  
-**Affects:** Navigation, service pages, CTA flow
-
-### Question
-
-Should Guided, Co-Created, and Full Implementation appear on a dedicated page, within service pages, or both?
-
-### Guardrail
-
-They are participation modes, not three separate service products.
+- typical outputs
+- client decisions
+- participation level
+- duration
+- investment presentation
+- exclusions
+- early visible win
+- completion evidence
 
 ---
 
 ## OD-008 — Contact and conversion path
 
-**Level:** Blocking before form implementation  
-**Affects:** Contact page, CTA labels, privacy, deployment
+**Level:** Blocking before a production form is implemented  
+**Affects:** Talk/contact, privacy, deployment
 
-### Decisions required
+### Needed
 
-- Direct email, form, scheduler, or combination
-- Form destination
-- Required fields
-- Qualification questions
-- Expected response time
-- Privacy handling
-- Spam protection
+- direct email, form, scheduler, or combination
+- form destination
+- required fields
+- spam protection
+- expected response time
+- privacy/data handling
+
+The current website may provide conversation language and a mail link, but should not imply an unconfigured form exists.
 
 ---
 
 ## OD-009 — Pricing and investment visibility
 
-**Level:** Non-blocking for early drafts; blocking for final service pages  
-**Affects:** Safety, qualification, conversion
+**Level:** Non-blocking for current prototype; blocking for final offer pages
 
 ### Options
 
-- No public pricing
-- Starting investment
-- Ranges by service family
-- Fixed-scope package pricing
-- Pricing disclosed after pathway selection
-
----
-
-## OD-010 — Navigation at launch
-
-**Level:** Blocking before header revision  
-**Affects:** Header, URLs, mobile menu, SEO
-
-### Known
-
-An early five-link navigation exists. A later strategy document recommends `Start Here` and `How We Work` as primary items. Neither should be adopted automatically.
-
-### Decision needed
-
-Choose the smallest navigation that supports both recognition-based entry and descriptive service discovery without overcrowding the header.
+- no public pricing
+- starting investment
+- ranges by service family
+- fixed-scope packages
+- pricing after review/path selection
 
 ---
 
 ## OD-011 — Regional versus broader market positioning
 
 **Level:** Deferred  
-**Affects:** SEO, proof, About page, contact language
+**Affects:** SEO, About, local proof, metadata
 
 ### Question
 
-Should the launch position oobCREATIVE primarily for the Roaring Fork Valley and regional relationships, or for a broader remote market?
+Should launch positioning emphasize the Roaring Fork Valley/regional relationships, a broader remote market, or both with separate search strategies?
 
 ---
 
 ## OD-012 — Content management model
 
-**Level:** Deferred until page briefs stabilize  
-**Affects:** Astro content collections, editing workflow, future automation
+**Level:** Deferred until repeated content types stabilize
 
 ### Options
 
-- Page content directly in `.astro` files
-- Markdown or MDX content collections
-- Structured YAML/JSON data
-- Hybrid model
+- content in `.astro`
+- Markdown/MDX collections
+- structured YAML/JSON
+- hybrid
 
-### Working recommendation
+Do not add a CMS until the actual update workflow makes the need clear.
 
-Do not introduce a CMS or content collection until the repeated content types and update workflow are clear.
+---
+
+## OD-013 — Standalone Answers architecture
+
+**Level:** Non-blocking  
+**Affects:** SEO, URLs, video/FAQ publishing
+
+### Question
+
+Which persona-qualified questions deserve standalone pages versus full answers embedded in existing pages?
+
+### Working rule
+
+Publish a standalone Answer only when it can provide meaningful depth, distinct search intent, and useful internal links. Do not create thin FAQ pages merely to target keywords.
+
+---
+
+## OD-014 — Production keyword prioritization
+
+**Level:** Non-blocking for current prototype; required before scaled SEO publishing
+
+### Needed
+
+Use current keyword/semantic evidence, Search Console when available, SERP review, and geography to prioritize exact phrasing among persona-qualified questions.
+
+### Guardrail
+
+Volume alone does not qualify a keyword. It must still pass the persona + genuine-question test.

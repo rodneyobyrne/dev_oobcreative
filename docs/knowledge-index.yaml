@@ -1,5 +1,5 @@
-version: 1
-updated: 2026-07-22
+version: 2
+updated: 2026-08-22
 owner: Rodney O'Byrne
 status: working
 
@@ -52,7 +52,17 @@ documents:
   - id: website-navigation-and-seo
     path: docs/strategy/05-website-navigation-and-seo.md
     role: strategy
+    status: approved
+    canonical: true
+  - id: ai-integration-market-strategy
+    path: docs/strategy/06-ai-integration-market-strategy.md
+    role: strategy
     status: working
+    canonical: true
+  - id: persona-search-language-and-faq
+    path: docs/strategy/07-persona-search-language-and-faq.md
+    role: strategy
+    status: approved
     canonical: true
   - id: brand-and-voice
     path: docs/design/brand-and-voice.md
@@ -67,7 +77,7 @@ documents:
   - id: visual-design-system
     path: docs/design/visual-design-system.md
     role: design
-    status: working
+    status: approved
     canonical: true
   - id: messaging-architecture
     path: docs/content/messaging-architecture.md
@@ -77,7 +87,17 @@ documents:
   - id: homepage-brief
     path: docs/content/pages/homepage-brief.md
     role: page-brief
+    status: approved
+    canonical: true
+  - id: proof-inventory
+    path: docs/content/proof-inventory.md
+    role: content-governance
     status: working
+    canonical: true
+  - id: seo-map
+    path: docs/implementation/seo-map.md
+    role: implementation
+    status: approved
     canonical: true
   - id: site-structure
     path: docs/implementation/site-structure.md

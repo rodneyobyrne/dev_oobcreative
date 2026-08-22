@@ -5,49 +5,32 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { href: "/who-we-help/", label: "Who We Help" },
   { href: "/services/", label: "Services" },
-  { href: "/work/", label: "Work" },
-  { href: "/about/", label: "About" },
+  { href: "/#answers", label: "Answers" },
+  { href: "/#work", label: "Work" },
+  { href: "/#about", label: "About" },
+  { href: "/#talk", label: "Talk" },
 ];
 ---
 
 <header class="site-header">
   <div class="site-shell site-header__inner">
     <a class="site-header__mark" href="/" aria-label="oobCREATIVE home">
-      <img
-        src="/branding/oob_horiz-flat-dark.png"
-        alt="oobCREATIVE"
-        width="215"
-        height="50"
-      />
+      <img src="/branding/oob_horiz-flat-dark.png" alt="oobCREATIVE" width="215" height="50" />
     </a>
 
     <nav class="site-nav site-nav--desktop" aria-label="Primary navigation">
-      {navItems.map((item) => (
-        <a href={item.href}>{item.label}</a>
-      ))}
-
-      <a class="site-nav__cta" href="/start-a-conversation/">
-        Start a Conversation
-      </a>
+      {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+      <a class="site-nav__cta" href="/#review">Find your first move</a>
     </nav>
 
     <details class="site-nav-mobile">
       <summary aria-label="Open navigation">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </summary>
-
       <nav aria-label="Mobile navigation">
-        {navItems.map((item) => (
-          <a href={item.href}>{item.label}</a>
-        ))}
-
-        <a class="site-nav__cta" href="/start-a-conversation/">
-          Start a Conversation
-        </a>
+        {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+        <a class="site-nav__cta" href="/#review">Find your first move</a>
       </nav>
     </details>
   </div>
@@ -88,38 +71,12 @@ const navItems: NavItem[] = [
     left: 0;
     height: 10px;
     background: #111111;
-    clip-path: polygon(
-      0 34%,
-      6% 28%,
-      13% 39%,
-      21% 31%,
-      29% 42%,
-      38% 30%,
-      47% 40%,
-      57% 29%,
-      67% 41%,
-      77% 31%,
-      87% 39%,
-      94% 28%,
-      100% 35%,
-      100% 66%,
-      92% 61%,
-      84% 70%,
-      74% 62%,
-      64% 71%,
-      54% 61%,
-      44% 70%,
-      34% 62%,
-      24% 71%,
-      14% 61%,
-      6% 69%,
-      0 64%
-    );
+    clip-path: polygon(0 34%, 7% 27%, 14% 42%, 23% 31%, 33% 44%, 43% 29%, 54% 42%, 65% 31%, 76% 45%, 87% 30%, 100% 39%, 100% 66%, 90% 60%, 80% 73%, 69% 61%, 58% 74%, 47% 60%, 36% 72%, 25% 61%, 13% 73%, 0 64%);
     pointer-events: none;
   }
 
   .site-header__inner {
-    min-height: 82px;
+    min-height: 78px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,35 +85,35 @@ const navItems: NavItem[] = [
 
   .site-header__mark {
     display: inline-flex;
-    flex: 0 0 auto;
     align-items: center;
+    flex: 0 0 auto;
   }
 
   .site-header__mark img {
     display: block;
     width: auto;
-    height: 42px;
+    height: 40px;
   }
 
   .site-nav {
     display: flex;
     align-items: center;
-    gap: clamp(1.4rem, 2.8vw, 2.8rem);
+    gap: clamp(1rem, 2vw, 1.8rem);
   }
 
   .site-nav a {
     color: #ffffff;
-    font-size: 0.76rem;
+    font-size: 0.72rem;
     line-height: 1;
     font-weight: 700;
-    letter-spacing: 0.055em;
+    letter-spacing: 0.065em;
     text-transform: uppercase;
     text-decoration: none;
   }
 
   .site-nav a:not(.site-nav__cta) {
     position: relative;
-    padding-block: 0.4rem;
+    padding-block: 0.45rem;
   }
 
   .site-nav a:not(.site-nav__cta)::after {
@@ -165,8 +122,8 @@ const navItems: NavItem[] = [
     right: 0;
     bottom: 0;
     left: 0;
-    height: 1px;
-    background: currentColor;
+    height: 2px;
+    background: #5d7fd0;
     transform: scaleX(0);
     transform-origin: left center;
     transition: transform 160ms ease;
@@ -178,27 +135,17 @@ const navItems: NavItem[] = [
   }
 
   .site-nav__cta {
-    padding: 1rem 1.4rem;
-    background: #8f8f8f;
-    color: #ffffff;
-    border: 1px solid #8f8f8f;
-    transition:
-      background-color 160ms ease,
-      color 160ms ease,
-      border-color 160ms ease;
-  }
-
-  .site-nav__cta:visited {
-    color: #ffffff;
+    padding: 0.9rem 1rem;
+    border: 1px solid #5d7fd0;
+    background: #244aa5;
   }
 
   .site-nav__cta:hover,
-  .site-nav__cta:focus-visible,
-  .site-nav__cta:visited:hover,
-  .site-nav__cta:visited:focus-visible {
+  .site-nav__cta:focus-visible {
     background: #ffffff;
-    color: #111111;
     border-color: #ffffff;
+    color: #111111;
+    outline: none;
   }
 
   .site-nav-mobile {
@@ -231,7 +178,7 @@ const navItems: NavItem[] = [
     position: absolute;
     top: calc(100% + 1rem);
     right: 0;
-    width: min(82vw, 320px);
+    width: min(88vw, 340px);
     padding: 1.25rem;
     background: #000000;
     border: 1px solid #444444;
@@ -239,7 +186,7 @@ const navItems: NavItem[] = [
 
   .site-nav-mobile nav a {
     display: block;
-    padding: 0.8rem 0;
+    padding: 0.85rem 0;
     color: #ffffff;
     font-size: 0.8rem;
     font-weight: 700;
@@ -249,26 +196,18 @@ const navItems: NavItem[] = [
   }
 
   .site-nav-mobile nav .site-nav__cta {
-    margin-top: 0.75rem;
+    margin-top: 0.7rem;
     padding: 1rem;
     text-align: center;
   }
 
+  @media (max-width: 940px) {
+    .site-nav--desktop { display: none; }
+    .site-nav-mobile { display: block; }
+  }
+
   @media (max-width: 760px) {
-    .site-header__inner {
-      min-height: 72px;
-    }
-
-    .site-header__mark img {
-      height: 42px;
-    }
-
-    .site-nav--desktop {
-      display: none;
-    }
-
-    .site-nav-mobile {
-      display: block;
-    }
+    .site-header__inner { min-height: 70px; }
+    .site-header__mark img { height: 38px; }
   }
 </style>
