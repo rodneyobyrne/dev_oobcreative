@@ -2,18 +2,92 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HandDrawnRule from "../../components/HandDrawnRule.astro";
 
-const pageTitle = "Services | oobCREATIVE";
-const description = "Messaging, websites, communication systems, practical AI, campaigns, storytelling, and ongoing communication support from oobCREATIVE.";
+const pageTitle = "AI Workflow, Website & Communication Services | oobCREATIVE";
+const description =
+  "Practical AI workflow help, website strategy, brand messaging, audience work, campaigns, media, and communication systems for small businesses and thoughtful teams.";
 ---
 
 <BaseLayout title={pageTitle} description={description}>
   <section class="page-hero">
     <div class="site-shell page-hero__copy">
-      <p class="eyebrow">Services</p>
-      <h1>Clear communication. Practical systems. Human judgment intact.</h1>
+      <p class="eyebrow ink-blue">Services</p>
+      <h1>You do not need more technology. You need the right part of the work to get easier.</h1>
       <p class="page-kicker">
-        The service is not the starting point. We begin with what needs to become easier to understand, easier to support, or easier to move forward.
+        oobCREATIVE works across AI workflows, business systems, websites, messaging, audience strategy, campaigns, and media. The service category comes after we understand the decision, friction, or opportunity you are actually dealing with.
       </p>
+      <a class="text-link" href="/#review">Not sure what kind of help you need? Start with one question <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <HandDrawnRule />
+
+  <section class="page-section" aria-labelledby="service-families">
+    <div class="site-shell">
+      <div class="section-heading-row section-heading-row--top">
+        <div>
+          <p class="eyebrow">Four capability families</p>
+          <h2 id="service-families">Different tools. One underlying job: make the work clearer and more useful.</h2>
+        </div>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <p class="eyebrow ink-blue">AI, workflow + business systems</p>
+          <h2>What can AI actually take off your plate?</h2>
+          <p>Workflow mapping, AI use-case selection, knowledge organization, human-review standards, tool and CRM connections, small internal tools, implementation support, and staff guidance.</p>
+          <p><strong>Useful when:</strong> work is repetitive, information is scattered, one person is carrying too much context, or the team is experimenting with AI without clear boundaries.</p>
+        </article>
+
+        <article class="service-card">
+          <p class="eyebrow ink-blue">Websites + digital experiences</p>
+          <h2>Why are people working so hard to understand what you do?</h2>
+          <p>Website strategy, audience pathways, information architecture, content hierarchy, navigation, copy direction, visual design, implementation, and search/AI-discovery foundations.</p>
+          <p><strong>Useful when:</strong> the website no longer reflects the business, different audiences need different information, or valuable work is getting lost inside a confusing decision path.</p>
+        </article>
+
+        <article class="service-card">
+          <p class="eyebrow ink-blue">Brand, messaging + audience</p>
+          <h2>How do you make complex value easier to understand without making it generic?</h2>
+          <p>Audience research, positioning, messaging architecture, service language, identity direction, brand narrative, customer questions, calls to action, and communication standards.</p>
+          <p><strong>Useful when:</strong> the expertise is real but difficult to explain, the audience is changing, or different people are describing the same organization in different ways.</p>
+        </article>
+
+        <article class="service-card">
+          <p class="eyebrow ink-blue">Campaigns, media + communications</p>
+          <h2>What does this idea need in order to move?</h2>
+          <p>Campaign strategy, launches, fundraising communication, storytelling, video and media direction, email, social rollout, content systems, and coordination across channels.</p>
+          <p><strong>Useful when:</strong> an important moment has too many moving parts, the message needs to travel across formats, or a small team needs one coherent communication system instead of more isolated content.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <HandDrawnRule />
+
+  <section class="page-section" aria-labelledby="how-we-work">
+    <div class="site-shell content-grid">
+      <div class="content-grid__aside">
+        <p class="eyebrow ink-blue">How we work</p>
+        <h2 id="how-we-work">Choose how much help is useful.</h2>
+        <p class="section-copy">The point is not to make you responsible for another complicated system. It is to keep the decisions understandable while matching the amount of support to the work.</p>
+      </div>
+      <div class="content-grid__main">
+        <div class="callout">
+          <p class="eyebrow ink-blue">DIY Assist</p>
+          <h3>You do more of the work with structure and expert support.</h3>
+          <p>Questions, research, templates, feedback, decision support, technical guidance, and practical help when you need it. DIY does not have to mean figuring everything out alone.</p>
+        </div>
+        <div class="callout">
+          <p class="eyebrow ink-blue">Co-Create</p>
+          <h3>Build it together with your judgment still visible.</h3>
+          <p>oobCREATIVE adds structure, outside perspective, creative development, and implementation while your knowledge and standards remain active in the process.</p>
+        </div>
+        <div class="callout">
+          <p class="eyebrow ink-blue">Custom Services</p>
+          <h3>Let oobCREATIVE carry more of the execution.</h3>
+          <p>You stay involved in the decisions that actually need you without having to manage every technical or production detail just because technology is part of the solution.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -21,63 +95,12 @@ const description = "Messaging, websites, communication systems, practical AI, c
 
   <section class="page-section">
     <div class="site-shell">
-      <div class="service-grid">
-        <article class="service-card">
-          <p class="eyebrow">Message + identity</p>
-          <h2>Make the value easier to understand.</h2>
-          <p>Positioning, audience clarification, brand and mission messaging, service descriptions, website copy, calls to action, and core narrative development.</p>
-        </article>
-        <article class="service-card">
-          <p class="eyebrow">Websites</p>
-          <h2>Make the decision path easier to use.</h2>
-          <p>Website architecture, audience pathways, content hierarchy, navigation, copy, visual direction, implementation, and search or AI-discovery foundations.</p>
-        </article>
-        <article class="service-card">
-          <p class="eyebrow">Systems + practical AI</p>
-          <h2>Make useful work easier to repeat.</h2>
-          <p>Communication workflows, knowledge systems, AI use-case selection, human-review standards, CRM and tool connections, implementation support, and staff guidance.</p>
-          <a class="text-link" href="/services/communication-systems-ai/">Explore AI + systems <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="service-card">
-          <p class="eyebrow">Campaigns + launches</p>
-          <h2>Make an important moment easier to act on.</h2>
-          <p>Campaign messaging, launches, fundraising communication, human-centered storytelling, video and media direction, email, social rollout, and distribution planning.</p>
-        </article>
-        <article class="service-card">
-          <p class="eyebrow">Ongoing support</p>
-          <h2>Keep the system useful after launch.</h2>
-          <p>Strategy and prioritization, content planning, website updates, campaign support, workflow refinement, vendor coordination, and review before publication.</p>
-        </article>
-        <article class="service-card">
-          <p class="eyebrow">Project recovery</p>
-          <h2>Find the next safe decision when something has gone wrong.</h2>
-          <p>A bounded review of what exists, what is salvageable, what should stop, and what a phased recovery path could look like without repeating the same opaque process.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <HandDrawnRule />
-
-  <section class="page-section">
-    <div class="site-shell content-grid">
-      <div class="content-grid__aside">
-        <p class="eyebrow">How we work</p>
-        <h2>Choose how much help you want.</h2>
-      </div>
-      <div class="content-grid__main">
-        <div class="callout">
-          <h3>Guided / DIY Assist</h3>
-          <p>You do more of the work with structure, templates, feedback, and expert guidance. DIY does not have to mean doing it alone.</p>
+      <div class="section-heading-row section-heading-row--top">
+        <div>
+          <p class="eyebrow">Not sure which one this is?</p>
+          <h2>That is a useful place to start.</h2>
         </div>
-        <div class="callout">
-          <h3>Co-Created / Co-Create</h3>
-          <p>We develop the thinking and materials together. Your knowledge remains visible while oobCREATIVE adds structure, outside perspective, and implementation skill.</p>
-        </div>
-        <div class="callout">
-          <h3>Full Implementation / Custom Services</h3>
-          <p>oobCREATIVE leads more of the strategy, creation, coordination, and implementation within clear boundaries so you can stay focused on the work you own.</p>
-        </div>
+        <a class="button button--ink-blue" href="/#review">Find your first move</a>
       </div>
     </div>
   </section>
