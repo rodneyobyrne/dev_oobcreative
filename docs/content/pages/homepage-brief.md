@@ -1,152 +1,202 @@
 ---
 id: homepage-brief
 title: Homepage Brief
-status: working
+status: approved
 owner: Rodney O'Byrne
-last_reviewed: 2026-07-22
+last_reviewed: 2026-08-22
 source_of_truth: true
 dependencies:
   - messaging-architecture
   - emotional-visual-system
-  - open-decisions
+  - website-navigation-and-seo
+  - persona-search-language-and-faq
 ---
 
 # Homepage Brief
 
 ## Page purpose
 
-Help a capable visitor feel accurately recognized, understand the kind of movement oobCREATIVE enables, and choose a clear next path without first diagnosing which service they need.
+Help a capable visitor recognize their situation quickly, receive something useful immediately, and understand how oobCREATIVE thinks before they are asked to choose a service or start a sales conversation.
+
+The homepage is the starting experience. Do not send the visitor to a separate `Start Here` page before value is delivered.
 
 ## Visitor starting state
 
-The visitor likely knows that communication, execution, visibility, workflow, technology, or a project is not working as it should.
+The visitor may know that work is harder than it should be, AI is creating pressure or opportunity, communication is fragmented, expertise is difficult to explain, a project is stuck, or an idea has always seemed too technical or expensive to build.
 
-They may not know the service name. They may worry that changing the system will sacrifice something important.
+They may not know which service they need. They are often asking a deeper question:
+
+> What do I need to understand, what can I safely delegate, and how do I keep control without creating another burden?
 
 ## Primary emotional movement
 
 ```text
-Unclear pressure
+Ambient pressure
       ↓
-Recognition without blame
+Recognition
       ↓
-Confidence that a path exists
+Useful interpretation
       ↓
-A bounded next choice
+Informed confidence
+      ↓
+Bounded next move
 ```
 
-## Protected values
+## Core rules
 
-The homepage must respect:
+### Emotion before technology
+Start with the human experience. Introduce AI, workflow, software, services, or technical recommendations only after recognition.
 
-- Quality
-- Mission and human impact
-- Professional agency
-- Intellectual depth
-- Responsibility and trust
-- Decision safety
-- Possibility
+### Answer before redirecting
+If a useful answer or interaction can reasonably happen on the page, provide it there. Links are for greater depth.
 
-Not every value must receive equal space above the fold.
+### Control without burden
+Do not promise another system for the visitor to “own.” Help them understand enough to make good decisions and remain in control without requiring them to become the technical operator.
 
-## Working page sequence
+### Search language comes from the persona
+Questions, headings, video topics, and internal links should use language the target persona would plausibly search, checked against `07-persona-search-language-and-faq.md`.
 
-### 1. Universal hero
+## Approved visual direction
 
-**Purpose:** Establish positioning without forcing a service or persona choice.
+**Concept 1: Operator's Clarity**
 
-**Must communicate:**
+The page should feel:
 
-- oobCREATIVE works with capable people carrying complex communication or execution gaps.
-- The work connects clarity, structure, creative communication, practical systems, and selective technology.
-- Human judgment remains responsible for the result.
+- editorial rather than SaaS-template
+- calm, competent, human, spacious
+- high contrast
+- structured but slightly imperfect
+- useful before promotional
+- emotionally perceptive without dramatizing the visitor
 
-**Open:** Final headline, primary archetype emphasis, hero imagery, and CTA.
+Use ballpoint blue as the primary interaction/focus accent. A warm vermilion signal may appear sparingly for emotional emphasis or interpretation, never as a competing primary button system.
 
-### 2. Recognition layer
+Use oobCREATIVE hand-drawn structural rules, restrained annotations, and subtle kinetic/sketch cues. Do not use robots, glowing AI interfaces, futuristic clichés, stock-photo overwhelm, or decorative doodle clutter.
 
-**Purpose:** Meet the visitor’s situation with emotional intelligence.
+## Page sequence
 
-**Content source:** The seven public pathways in `messaging-architecture.md`.
+### 1. Hero = first review question
 
-**Interaction rule:** Do not show seven visually equal primary choices without deliberate grouping or progressive disclosure.
+**Purpose:** Recognition and immediate participation.
 
-**Possible structures:**
+Working emotional direction:
 
-- Three primary conditions plus “see other situations”
-- Grouped conditions by pressure, clarity, and forward movement
-- Sequential editorial sections
-- A dedicated Start Here experience linked from the homepage
+> You know some of this work should be easier.
 
-**Open:** Pathway architecture and priority.
+Supporting language may introduce AI, workflow, websites, communication systems, and business processes after the recognition line.
 
-### 3. Desired movement
+The hero should contain:
 
-**Purpose:** Show what changes emotionally and practically.
+- emotional H1
+- concise supporting explanation
+- reassurance/control note
+- first review question
+- 4–5 full-width/selectable emotional options
+- selected state in ballpoint blue
+- immediate response/interpretation panel
+- clear statement that no email is required for the useful first response
 
-Examples of movement:
+Do not show a generic `Start Here` CTA that simply sends the visitor elsewhere.
 
-- Quality becomes transferable.
-- The mission becomes shareable.
-- Communication becomes manageable.
-- Expertise becomes understandable.
-- AI becomes defensible and useful.
-- Recovery becomes a sequence of safe decisions.
-- An idea becomes a credible test.
+### 2. Useful Answers
 
-These are strategic directions, not final homepage copy.
+**Purpose:** Demonstrate judgment through questions the audience is already trying to resolve.
 
-### 4. Service connection
+Initial priorities:
 
-**Purpose:** Translate recognized situations into descriptive service families.
+1. Do I need an AI consultant, IT, a developer, or can we do this ourselves?
+2. What can AI actually take off my plate?
+3. Can we build this ourselves now, or do we still need a developer?
+4. How do I use AI without making more work for myself?
+5. What should I never hand over to AI?
 
-**Guardrail:** The visitor should understand why a service is relevant before seeing a long deliverables list.
+Give the short answer on the homepage. Deeper content may later become standalone Answer pages/videos.
 
-**Open:** Which service families launch and how many appear on the homepage.
+### 3. What oobCREATIVE helps with
 
-### 5. How responsibility is shared
+**Purpose:** Translate recognized problems into capabilities after the visitor has context.
 
-**Purpose:** Create agency and safety.
+Working public capability families:
 
-Present Guided, Co-Created, and Full Implementation only when the distinctions are clear and available for the relevant services.
+- AI, Workflow + Business Systems
+- Websites + Digital Experiences
+- Brand, Messaging + Audience
+- Campaigns, Media + Communications
 
-### 6. Proof
+Ongoing support and project recovery may appear as participation/context rather than equal top-level categories when that produces a clearer choice.
 
-**Purpose:** Demonstrate judgment, execution, and trustworthiness.
+### 4. Work / proof context
 
-**Blocked by:** `proof-inventory.md`.
+**Purpose:** Show the kinds of complexity oobCREATIVE can handle.
 
-Proof should be selected based on the archetypes emphasized, not used as generic decoration.
+Do not publish unverified metrics, testimonials, outcomes, or new proof claims. Until the proof inventory is approved, use conservative descriptions or anonymized categories and avoid implying business causation.
 
-### 7. Final next step
+### 5. Ways to work together
 
-**Purpose:** Confirm a choice rather than invite an undefined discovery call.
+**Purpose:** Reduce consultant hesitation without turning participation modes into separate products.
 
-The CTA should explain what the visitor is choosing and what happens next.
+Use:
 
-## Visual system
+- DIY Assist
+- Co-Create
+- Custom Services
 
-The homepage must feel like one oobCREATIVE world.
+Explain control rather than “ownership.” The visitor should understand they can participate as much or as little as is useful without being deliberately locked into a system or consultant.
 
-Archetype sections may change tension, density, crop, pacing, and proof. They may not become unrelated themes.
+### 6. Founder perspective
 
-Use environmental imagery and meaningful detail. Do not rely on generic portraits or literal emotional clichés.
+**Purpose:** Establish why oobCREATIVE can bridge people, technology, information, communication, and work.
 
-## Existing technical foundation
+Working founder idea:
 
-The current Astro layout, header, footer, `PageHero`, `ContentSection`, `SectionHeading`, and `CallToAction` components may be retained as technical foundations.
+> Rodney O'Byrne has spent decades translating between people, technology, information, and work. AI is the newest interface in that continuum.
 
-They are not final design or final content.
+Keep this grounded and practical. Avoid guru positioning.
 
-## Blocking decisions
+### 7. Conversation
 
-- OD-001 Homepage archetype priority
-- OD-002 Public pathway architecture
-- OD-003 Launch service families
-- OD-004 Shared visual brand constants
-- OD-005 Proof inventory
-- OD-010 Navigation at launch
+**Purpose:** Give the visitor a specific, low-pressure way to bring a real situation forward.
 
-## Approval gate
+Do not make an undefined discovery call the only next step.
 
-Do not generate final homepage content or substantially revise global styling until the blocking decisions above are resolved or Rodney explicitly authorizes a bounded exploratory prototype.
+## Navigation on the homepage
+
+Primary labels:
+
+- Services
+- Answers
+- Work
+- About
+- Talk
+
+Answers, Work, About, and Talk may point to substantive homepage anchors until a deeper page is justified. A persistent action may link to `/#review` with language such as `Find your first move`, but do not label a separate destination `Start Here` when the homepage itself already starts the experience.
+
+## Mobile behavior
+
+The review interaction is mobile-first.
+
+- option controls must read unmistakably as selectable choices
+- use full-width stacked options on narrow screens
+- selected state must be visually obvious without relying only on color
+- interpretation follows the selection without requiring a new page
+- maintain visible keyboard focus states
+- avoid horizontal card carousels for the primary question
+
+## SEO/content checkpoints
+
+Before final launch copy:
+
+- validate H1/title resolution against persona search intent
+- review H2s against FAQ/search clusters
+- ensure descriptive internal-link anchors
+- ensure useful textual answers remain visible in HTML
+- preserve semantic heading order
+- review exact keyword phrasing against current search evidence without overriding emotional-language rules
+
+## Still blocked/deferred
+
+- publication-ready proof details
+- final contact/form destination
+- production canonical domain
+- final standalone Answers URLs
+- final pricing/investment presentation
