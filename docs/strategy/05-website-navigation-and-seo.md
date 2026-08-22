@@ -2,193 +2,141 @@
 id: website-navigation-and-seo
 title: Website Navigation and SEO Architecture
 document_type: website-strategy
-status: approved
+status: working
 owner: Rodney O'Byrne
-last_reviewed: 2026-08-22
+last_reviewed: 2026-07-22
 source_of_truth: true
 supersedes: []
 dependencies:
   - emotional-marketing-system
   - service-and-product-architecture
-  - persona-search-language-and-faq
 ---
 # Website Navigation and SEO Architecture
 
 ## Core principle
 
-The site should begin with the human experience and introduce technology or service terminology only after the visitor recognizes themselves.
+Personas are internal research tools. Public pages should use recognizable situations, descriptive service language, and concrete outcomes.
 
-Use:
+The site should support:
 
-```text
-Recognition → useful answer → deeper explanation → relevant service/proof → next decision
-```
+1. Emotional navigation for visitors who know something is wrong but cannot name the service.
+2. Descriptive service navigation for visitors who already know what they need and for search relevance.
 
-Do not use:
+## Recommended primary navigation
 
-```text
-Service catalog → vague teaser → Learn More → another landing page
-```
-
-## Navigation philosophy
-
-Before creating a destination page, ask whether the visitor can receive the useful part on the current page.
-
-Links are for greater depth, not for withholding basic answers.
-
-## Approved primary navigation
-
+- Home
+- Start Here
 - Services
-- Answers
+- How We Work
 - Work
 - About
-- Talk
+- Start a Conversation
 
-The homepage itself is the start experience. Do not add a separate `Start Here` destination merely to begin the review.
-
-Until a section genuinely needs more depth, Answers, Work, About, and Talk may link to substantial homepage anchors. This prevents thin pages and lets the visitor receive value immediately.
-
-## Approved working architecture
+## Recommended architecture
 
 ```text
 HOME
 │
-│  Hero = first question of the free interactive review
-│  Immediate interpretation / useful response
-│  Useful answers
-│  What oobCREATIVE can help with
-│  Work / proof context
-│  Ways to work together
-│  Founder perspective
-│  Conversation
+├── START HERE
+│   ├── Everything still depends on me
+│   ├── Our work is difficult to explain
+│   ├── Communication feels chaotic
+│   ├── People do not understand my expertise
+│   ├── We need a practical way to use AI
+│   ├── A project has stalled or gone wrong
+│   └── I am ready to turn an idea into something real
 │
 ├── SERVICES
-│   ├── AI, Workflow + Business Systems
-│   ├── Websites + Digital Experiences
-│   ├── Brand, Messaging + Audience
-│   └── Campaigns, Media + Communications
+│   ├── Message, Positioning and Identity
+│   ├── Website Strategy and Visual Refresh
+│   ├── Communication Systems and Practical AI
+│   ├── Campaigns, Launches and Storytelling
+│   └── Ongoing Communications Support
 │
-├── ANSWERS
-│   └── Expand into standalone pages only when a question supports meaningful depth/search intent
+├── HOW WE WORK
+│   ├── Guided
+│   ├── Co-Created
+│   └── Full Implementation
 │
 ├── WORK
-│   └── Expand into case studies only when proof and publication permission are verified
+│   ├── Case Studies
+│   ├── Before and After
+│   └── Client Stories
 │
 ├── ABOUT
-│   └── Expand when founder history and philosophy need more space than the homepage section
+│   ├── Philosophy
+│   ├── Why oobCREATIVE
+│   └── Human-Centered Use of Technology
 │
-└── TALK
-    └── Contact/conversation flow after destination and privacy handling are approved
+└── START A CONVERSATION
 ```
 
-## SEO strategy
+## SEO presentation rule
 
-### Primary rule
+Use descriptive service language in:
 
-Search targets begin with the audience's language, not the agency's service catalog.
+- Page titles
+- H1 headings
+- URLs
+- Navigation labels
+- Internal links
+- Introductory copy
+- Case-study links
 
-Every target keyword or question must pass two tests:
-
-1. Would one of the internal personas plausibly type or speak this into a search engine or AI assistant?
-2. Does it connect to a question they are genuinely trying to resolve?
-
-Service-category phrases such as `AI consulting for small business`, `AI workflow consulting`, `website strategy`, or `brand messaging consultant` may support a page where relevant. They do not automatically become the emotional opening or primary H1.
-
-### Heading rule
-
-A strong page should usually combine:
-
-- a clear search subject
-- a recognizable human tension
+Use branded or emotional names as secondary headings.
 
 Example:
 
-```text
-H1: How do I use AI in my business without making more work?
-Supporting copy: Practical AI and workflow help for small teams that want more control, not another system to manage.
+```markdown
+# Communication Systems and AI Workflows
+
+## The Communications Workflow Reset
+
+When every request feels urgent, communication becomes impossible to manage.
 ```
 
-The exact question may appear in H1/H2, title, intro copy, FAQ, video title, or internal anchor depending on page intent. Do not stuff exact phrases merely to satisfy a keyword checklist.
-
-## Answers as the search engine
-
-Answers is the primary question-led content system. It can contain:
-
-- concise on-page answers
-- deeper FAQ pages
-- 30–75 second animated videos
-- practical guides and checklists
-- links to relevant services or proof when helpful
-
-The first ten working question clusters are maintained in `docs/strategy/07-persona-search-language-and-faq.md`.
-
-## Internal linking rule
-
-Prefer descriptive, question-aware anchor text over `Learn More` or `Read More`.
-
-Examples:
-
-- `See what should stay human when you use AI`
-- `Can we build this ourselves now, or do we need a developer?`
-- `How to find one useful AI workflow before buying another tool`
-- `See website strategy for businesses people struggle to understand`
-
-Use the pattern:
+## Suggested service URLs
 
 ```text
-Question / tension
-      ↓
-Useful answer
-      ↓
-Relevant service or capability
-      ↓
-Verified proof
-      ↓
-Next useful decision
+/services/brand-messaging-positioning/
+/services/website-strategy-design/
+/services/communication-systems-ai/
+/services/campaign-storytelling/
+/services/ongoing-communications-support/
 ```
 
-## Persona rule
+## Public audience pages
 
-Persona names are internal. Do not place Frederick, Jonathan, Brendan, Devon, Eli, Dave, or Doug in public URLs, metadata, navigation, or headings.
+Keep the number small:
 
-Use their questions, protected values, and recognizable situations instead.
+- Founder-led organizations
+- Nonprofits and mission-driven teams
+- Communications and operational leaders
+- Experts and independent professionals
 
-## SEO checkpoints
+Do not create a public page for each named persona unless a distinct search market and content need are proven.
 
-SEO is an embedded discipline, not a final pass.
+## Product-page structure
 
-### 1. Architecture
-Review search intent, page differentiation, likely cannibalization, question opportunities, and internal-link structure.
+1. Searchable service heading
+2. Emotional recognition statement
+3. Situations that indicate fit
+4. What the buyer may be protecting
+5. The movement or outcome
+6. What oobCREATIVE may create
+7. Participation options
+8. Timeline and investment guidance
+9. Proof and examples
+10. Clear next step
 
-### 2. Page strategy
-For each significant page define:
-- primary search intent
-- primary question/topic
-- supporting semantic terms
-- persona(s)
-- emotional entry state
-- H1 purpose
-- likely H2 structure
-- related Answers
-- related services/work
-- internal links in and out
+## Marketing caution
 
-### 3. Copy
-Confirm intended search language appears naturally in titles, headings, opening copy, anchor text, FAQs, captions/transcripts, and metadata.
+Seven equal public products could:
 
-### 4. UX/design
-Review the rendered design. Important headings and answers should not be visually hidden, turned into images, or demoted solely for aesthetics.
+- Create decision overload
+- Blur the brand
+- Require more proof than currently exists
+- Produce thin or overlapping pages
+- Push oobCREATIVE into adjacent consulting categories
 
-### 5. Internal-link/content network
-Confirm Homepage, Answers, Services, Work, and About form a deliberate semantic network.
-
-### 6. Pre-launch technical review
-Review title/description coverage, heading hierarchy, crawlability, canonical handling, robots/sitemap behavior, structured data where justified, image alt decisions, redirects, and performance.
-
-## Search/brand resolution rule
-
-SEO does not override the approved brand rule `emotion before technology`.
-
-When a high-value search phrase creates a poor emotional opening, preserve the search meaning in the title, supporting copy, FAQ, anchor text, or adjacent heading rather than forcing an awkward keyword-heavy H1.
-
-When an SEO recommendation is not followed, document why.
+Use seven emotional pathways to personalize a smaller, clearer service ecosystem.

@@ -2,72 +2,56 @@
 
 ## Status
 
-Approved working direction for the current website redesign.
+Approved working direction for homepage implementation.
 
-## Core principle
+## Core Principle
 
-Minimal brand. Emotionally specific content. Useful interaction before decoration.
+Minimal brand. Emotionally specific content.
 
-oobCREATIVE remains the steady visual container. Persona needs influence emphasis, pacing, density, proof, and emotional temperature, not the fundamental identity.
+oobCREATIVE remains the steady visual container. Persona needs influence the imagery, pacing, and proof—not the fundamental identity.
 
-## Approved homepage direction
+## Brand Constants
 
-**Concept 1: Operator's Clarity**
+- High contrast
+- Generous whitespace
+- Clear hierarchy
+- Arial, Helvetica, or system sans-serif
+- Black, white, and tonal gray
+- Rough hand-drawn structural lines
+- Clean geometric buttons and CTA borders
+- Sparse imagery
+- Mark-led identity in recurring interface locations
 
-The homepage should feel like a capable operator has organized a complicated situation for the visitor without making it sterile.
+## Logo Hierarchy
 
-Primary traits:
+### Primary mark
 
-- high contrast
-- generous whitespace
-- strong hierarchy
-- calm editorial composition
-- clear interaction states
-- human, tactile imperfection
-- restrained structural doodle language
-- practical rather than futuristic
+Use `public/branding/Mark.svg` or the appropriate black variant as the primary recurring identity.
 
-## Palette
+Use the mark in:
 
-### Core
+- global header
+- homepage navigation
+- mobile header
+- favicon-like interface locations
 
-- Ink / near black: `#111111`
-- Paper: `#ffffff`
-- Soft paper: `#f7f7f5`
-- Text gray: `#444444`
-- Structural gray: `#d8d8d4`
+Never place the mark inside a black box on a white background.
 
-### Primary interaction accent: ballpoint blue
+### Formal lockup
 
-Working token: `#244aa5`
+Use the complete oobCREATIVE lockup in formal identity locations:
 
-Use for:
+- footer
+- About
+- contact
+- proposals
+- official external brand moments
 
-- selected form/review options
-- focus states
-- primary interactive cues
-- contextual arrows
-- handwritten guidance
-- links or CTA emphasis where appropriate
+Footer asset:
 
-Blue should communicate thought, selection, guidance, and control.
-
-### Secondary emotional signal: warm vermilion
-
-Working token: `#e4572e`
-
-Use sparingly for:
-
-- an important emotional word
-- a revealed insight
-- a small annotation or doodle signal
-- a consequence or human emphasis
-
-Do not make vermilion a second competing button/navigation system. Primary UI actions remain predominantly blue or black.
+`/branding/logo_horiz%23111111_background.png`
 
 ## Typography
-
-Use Arial, Helvetica, or system sans-serif.
 
 ### H1
 
@@ -85,23 +69,28 @@ Use Arial, Helvetica, or system sans-serif.
 
 ### H3
 
-- `clamp(1.35rem, 2vw, 1.95rem)`
-- line-height `1.1`
+- `clamp(1.45rem, 2vw, 2rem)`
+- line-height `1.08`
 - letter-spacing `-0.03em`
+- weight `700`
+
+### H4
+
+- `1.12rem`
+- line-height `1.25`
 - weight `700`
 
 ### Supporting type
 
 - Lead: `clamp(1.15rem, 1.5vw, 1.42rem)`
 - Body: `1rem / 1.65`
-- Small/metadata: minimum `0.88rem` where practical
-- Eyebrow: `0.75rem`, uppercase, tracked
+- Small and metadata: minimum `0.9rem` where practical
+- Eyebrow: `0.76rem`, uppercase, tracked
+- Tone shift: gray plus reduced weight
 
-Do not introduce a decorative typeface merely to imitate handwriting. Handwritten notes can be suggested through position, rotation, linework, and restrained italic treatment if a true brand handwriting asset is not available.
+## Structural Lines
 
-## Structural lines
-
-Use rough hand-drawn lines in place of overly perfect section rules and selected dividers.
+Use rough hand-drawn lines in place of standard section borders and column separators.
 
 Acceptable:
 
@@ -109,85 +98,37 @@ Acceptable:
 - small irregularities
 - slight rotation
 - subtle double-stroke noise
-- rounded or uneven edges
-- occasional ballpoint-blue hand mark
+- rounded or uneven visual edges
 
-Do not make every boundary wiggly. Dense form controls, cards, and buttons need clean geometry so users can understand what is selectable.
+Do not apply rough lines to:
 
-## Review/form controls
+- buttons
+- form controls
+- CTA rectangles
+- formal input boundaries
 
-The homepage review is a core brand experience.
+Those remain geometric and clean.
 
-Controls should:
-
-- be full-width or comfortably large on mobile
-- read unmistakably as selectable choices
-- use clean rectangular boundaries
-- show selected state through blue border/background plus a non-color cue
-- maintain strong keyboard focus
-- avoid tiny radio-button-only interaction targets
-- avoid pill-chip clusters that can be mistaken for category tags
-
-The hand-drawn brand can appear as a selected underline, response marker, annotation, or transition cue around the clean control.
-
-## Layout
-
-The homepage is not a conventional stack of equal SaaS cards.
-
-Prefer:
-
-- asymmetrical but controlled hero composition
-- editorial section changes
-- mixed text widths
-- selective bordered modules
-- generous breathing room
-- larger moments of typography
-- fewer, more meaningful visual objects
-
-Avoid turning every piece of content into the same rounded card.
-
-## Homepage sequence
-
-1. Hero + first review question + immediate interpretation
-2. Useful Answers
-3. What oobCREATIVE helps with
-4. Work / proof context
-5. Ways to work together
-6. Founder perspective
-7. Conversation
-8. Formal footer
-
-## Imagery
-
-Avoid:
-
-- robots
-- glowing AI interfaces
-- science-fiction imagery
-- generic team stock photography
-- literal overwhelm clichés
-- luxury-executive posturing
-- decorative technology diagrams with no meaning
-
-Prefer when imagery is needed:
-
-- close working details
-- materials, notes, editing, drawing, building
-- real process evidence
-- grayscale or restrained treatment
-- meaningful screenshots or artifacts after publication permission is confirmed
-
-## Supporting brand elements
+## Supporting Brand Elements
 
 Use sparingly:
 
-- hand-drawn arrows
-- annotation notes
-- rough horizontal rules
-- small kinetic doodle icons
+- numbered circles
+- handwritten notes
+- subtle tonal background shifts
 - partial frames
 - evidence labels
-- simple pathway marks
-- black-and-white process imagery
+- close-up action photography
+- text-only capability labels
 
-The doodle language should feel mature, editorial, and intentional. No graffiti splatter, excessive hatching, mascot polish, or cartoon clutter.
+## Layout
+
+Homepage should remain sparse:
+
+1. Hero
+2. Three pathways
+3. Selected work
+4. Direct CTA
+5. Formal footer
+
+Avoid stacking additional explainer sections onto the homepage until the primary journey is proven.
